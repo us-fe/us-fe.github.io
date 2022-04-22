@@ -1,0 +1,23 @@
+{
+  "name": "us-fe.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/us-fe/us-fe.github.io.git"
+  },
+  "author": "zongyanqi@foxmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/us-fe/us-fe.github.io/issues"
+  },
+  "homepage": "https://github.com/us-fe/us-fe.github.io#readme",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.39"
+  }
+}
