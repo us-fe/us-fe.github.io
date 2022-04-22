@@ -1,14 +1,19 @@
-import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions } from 'vuepress'
+// import { defineUserConfig } from 'vuepress'
+// import type { DefaultThemeOptions } from 'vuepress'
+// import { comment, GiscusOptions } from "vuepress-plugin-comment2";
+import { defineHopeConfig } from "vuepress-theme-hope";
+import { path } from "@vuepress/utils";
 
-export default defineUserConfig<DefaultThemeOptions>({
+
+
+export default defineHopeConfig({
     // 站点配置
     lang: 'zh-CN',
     title: 'US-FE',
     description: '北美前端面试攻略',
 
-    // 主题和它的配置
-    theme: '@vuepress/theme-default',
+    // we are using a custom theme adding this plugin
+    theme: path.resolve(__dirname, "./theme"),
 
     // site-level locales config
     // locales: {
@@ -50,7 +55,7 @@ export default defineUserConfig<DefaultThemeOptions>({
             '/system-design/': [
                 {
                     text: '1. Design facebook.com',
-                    link: '/system-design/1-design-facebook-com'    
+                    link: '/system-design/1-design-facebook-com'
                 }
             ]
 
@@ -94,17 +99,6 @@ export default defineUserConfig<DefaultThemeOptions>({
                 link: 'https://github.com/us-fe'
             }
         ],
-        // vssueConfig: {
-        //     platform: 'github',
-        //     owner: 'us-fe',
-        //     repo: 'us-fe.github.io',
-        //     clientId: '43a736117e3390b1549c',
-        //     clientSecret: 'a5a4990ad34fd6eea84e9592da69b364d099e9de',
-        // }
-
     },
 
-    // plugins: [
-    //     ['@vuepress-reco/vuepress-plugin-comments']
-    // ]
 })
