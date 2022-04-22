@@ -20,7 +20,7 @@ const commentTheme: Theme<DefaultThemeOptions> = {
 
                 comment: true,
                 type: "giscus",
-                repo: 'us-fe.github.io',
+                repo: 'us-fe/us-fe.github.io',
                 repoId: "R_kgDOHN4p-g",
                 category: "Announcements",
                 categoryId: "DIC_kwDOHN4p-s4COuxq",
