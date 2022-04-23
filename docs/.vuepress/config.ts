@@ -57,6 +57,16 @@ export default defineHopeConfig({
                     text: '1. Design facebook.com',
                     link: '/system-design/1-design-facebook-com'
                 }
+            ],
+            '/blog/': [
+                {
+                    text: '关于 US-FE',
+                    link: '/blog/about-us-fe'
+                },
+                {
+                    text: '如何参与建设',
+                    link: '/blog/how-to-contribute'
+                }
             ]
 
         },
@@ -93,6 +103,9 @@ export default defineHopeConfig({
             },
             {
                 text: '系统设计', link: '/system-design/1-design-facebook-com',
+            },
+            {
+                text: '博客', link: '/blog/about-us-fe',
             },
             {
                 text: 'GITHUB',

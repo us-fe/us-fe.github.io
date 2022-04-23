@@ -9,6 +9,9 @@ actions:
   - text: 系统设计
     link: /system-design/1-design-facebook-com
     type: secondary
+  - text: 博客
+    link: /blog/how-to-contribute
+    type: secondary
 features:
   - title: 全方位涵盖
     details: 从基础题目、系统设计、行为面试等多方面解构北美前端面试
