@@ -19,5 +19,5 @@ You will need to use Hacker News API to fetch data and render in your UI compone
 
 You can use any framework or vanilla HTML/CSS/JS
 
-### Follow up
+## Follow up
 Can you add UI pagination?
