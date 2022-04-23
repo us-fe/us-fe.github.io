@@ -27,7 +27,7 @@ examples
     }
 \`\`\`
 
-## 解析
+## 答案
 \`\`\`js
     const answer = () => {
         // TODO
