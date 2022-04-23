@@ -51,6 +51,11 @@ export default defineHopeConfig({
                 children: [
                     '/problems/react/1-the-react-counter.md',
                 ]
+            }, {
+                text: 'UI Component',
+                children: [
+                    '/problems/ui-component/1-implement-hacker-news.md'
+                ]
             }],
             '/system-design/': [
                 {
@@ -98,6 +103,10 @@ export default defineHopeConfig({
                         // children: [
                         //     '/problems/react/1-the-react-counter.md',
                         // ]
+                    },
+                    {
+                        text: 'UI Component',
+                        link: '/problems/ui-component/1-implement-hacker-news.md'
                     }
                 ]
             },
