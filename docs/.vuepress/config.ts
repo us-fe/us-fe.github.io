@@ -36,6 +36,14 @@ export default defineHopeConfig({
     logo: "https://vuejs.org/images/logo.png",
     sidebar,
     navbar,
+    // 默认为 GitHub. 同时也可以是一个完整的 URL
+    repo: "us-fe/us-fe.github.io",
+    // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
+    // "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
+    // repoLabel: "GitHub",
+    // 是否在导航栏内显示仓库链接，默认为 `true`
+    repoDisplay: true,
+    docsDir: "/docs/",
   },
 
   plugins: [
