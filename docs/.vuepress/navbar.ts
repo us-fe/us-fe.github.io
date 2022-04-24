@@ -47,10 +47,6 @@ const navbar: HopeThemeNavbarConfig = [
   {
     text: "Markdown 增强语法",
     link: "https://vuepress-theme-hope.github.io/v2/md-enhance/zh/guide/",
-  },
-  {
-    text: "GITHUB",
-    link: "https://github.com/us-fe",
-  },
+  }
 ];
 export default navbar;
