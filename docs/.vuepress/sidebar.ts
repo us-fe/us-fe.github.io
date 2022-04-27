@@ -25,7 +25,10 @@ const sidebar: HopeThemeSidebarConfig = {
   "/system-design/": [
     {
       text: "1. Design facebook.com",
-      link: "/system-design/1-design-facebook-com",
+      children: [
+        "/system-design/1-design-facebook-com",
+        "/system-design/2-design-todo-app.md"
+      ],
     },
   ],
   "/blog/": [
