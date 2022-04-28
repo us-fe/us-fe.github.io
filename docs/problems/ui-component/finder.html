@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finder</title>
+    <style>
+        #first {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        #second {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+
+        #third {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+        }
+
+        #fifth {
+            width: 200px;
+            height: 200px;
+            background-color: darkblue;
+        }
+
+        #forth {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+        }
+
+        #fifth {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+
+        #sixth {
+            width: 200px;
+            height: 200px;
+            background-color: sienna;
+        }
+
+        #seventh {
+            width: 200px;
+            height: 200px;
+            background-color: darkgreen;
+        }
+
+        #eighth {
+            width: 200px;
+            height: 200px;
+            background-color: slateblue;
+        }
+
+        #ninth {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td id="first">first</td>
+            <td id="second">second</td>
+            <td id="third">third</td>
+        </tr>
+        <tr>
+            <td id="forth">forth</td>
+            <td id="fifth">fifth</td>
+            <td id="sixth">sixth</td>
+        </tr>
+        <tr>
+            <td id="seventh">seventh</td>
+            <td id="eighth">eighth</td>
+            <td id="ninth">ninth</td>
+        </tr>
+    </table>
+
+    <script>
+        class Finder {
+
+            constructor(container) {
+                this.container = container;
+                this.td = null;
+            }
+
+            // return <td> element
+            find(id) {
+                this.td = this.container.querySelector(id)
+            }
+
+            // takes <td> element
+            color(rgb) {
+                if (!this.td) return;
+                this.td.style.backgroundColor = rgb;
+            }
+
+            _insertAtIndex(row, child, index) {
+                if (!index) index = 0
+                if (index >= row.children.length) {
+                    row.appendChild(child)
+                } else {
+                    row.insertBefore(child, row.children[index])
+                }
+            }
+
+            shiftdown() {
+                const td = this.td;
+                if (!td) return;
+                const tr = td.parentElement;
+                const index = [...tr.children].indexOf(td);
+
+                // find next tr, td
+                const trs = [...tr.parentElement.children];
+                const trIndex = trs.indexOf(tr);
+                const nextTr = trs[(trIndex + 1) % trs.length];
+                const nextTd = [...nextTr.children][index];
+
+
+                tr.removeChild(td);
+                nextTr.removeChild(nextTd);
+
+                this._insertAtIndex(tr, nextTd, index);
+                this._insertAtIndex(nextTr, td, index);
+            }
+        }
+
+        var finder = new Finder(document.querySelector('table'));
+        finder.find('#first');
+        finder.color('blue')
+        finder.shiftdown()
+
+
+    </script>
+</body>
+
+</html>
