@@ -6,7 +6,7 @@ const navbar: HopeThemeNavbarConfig = [
     link: "/",
   },
   {
-    text: "基础面试题",
+    text: "面试题目",
     children: [
       {
         text: "Coding",
@@ -34,12 +34,22 @@ const navbar: HopeThemeNavbarConfig = [
         text: "UI Component",
         link: "/problems/ui-component/1-implement-hacker-news.md",
       },
+      {
+        text: "系统设计",
+        link: "/system-design/1-design-facebook-com",
+      },
     ],
   },
   {
-    text: "系统设计",
-    link: "/system-design/1-design-facebook-com",
+    text: "电子书",
+    children: [
+      {
+        text: "You Don't Know JS",
+        link: "https://us-fe.github.io/ebooks/zh/you-dont-know-js-v1/up-going/ch1.html",
+      }
+    ]
   },
+
   {
     text: "博客",
     link: "/blog/how-to-contribute",

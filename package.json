@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/us-fe/us-fe.github.io#readme",
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.39",
+    "vuepress": "2.0.0-beta.39",
     "vuepress-plugin-copyright2": "^2.0.0-beta.46",
     "vuepress-plugin-md-enhance": "^2.0.0-beta.46",
     "vuepress-plugin-reading-time2": "^2.0.0-beta.24",
