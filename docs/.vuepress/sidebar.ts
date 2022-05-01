@@ -1,6 +1,26 @@
 import { HopeThemeSidebarConfig } from "vuepress-theme-hope";
+import css from "./sidebar/css.json";
+import design from "./sidebar/design.json";
+import problem from "./sidebar/problem.json";
+import question from "./sidebar/question.json";
+import quiz from "./sidebar/quiz.json";
+import reactQuiz from "./sidebar/react-quiz.json";
+import react from "./sidebar/react.json";
+import ui from "./sidebar/ui.json";
+// import ts from "./sidebar/typescript.json";
 
 const sidebar: HopeThemeSidebarConfig = {
+  "/question/": [
+    problem,
+    quiz,
+    react,
+    reactQuiz,
+    question,
+    css,
+    design,
+    ui,
+    // ts
+  ],
   "/problems/": [
     {
       text: "Coding",

@@ -1,0 +1,21 @@
+{
+  "text": "System Design",
+  "collapsible": true,
+  "children": [
+    "/question/design-facebook-web-app",
+    "/question/design-an-instagram",
+    "/question/designa-an-infinite-scroller",
+    "/question/design-a-messenger-app",
+    "/question/design-an-api-progress-bar",
+    "/question/design-a-typeahead-widget",
+    "/question/design-a-perfect-todo-app",
+    "/question/create-a-star-widget",
+    "/question/design-a-poll-widget",
+    "/question/design-a-carousel-widget",
+    "/question/design-twitter-web-app",
+    "/question/qrcode-to-login",
+    "/question/design-bfe-dev",
+    "/question/design-youtube-com",
+    "/question/create-an-editor"
+  ]
+}

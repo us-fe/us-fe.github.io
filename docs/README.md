@@ -3,11 +3,11 @@ home: true
 title: 首页
 # heroImage: /images/hero.png
 actions:
-  - text: 基础题目
-    link: /problems/coding/1-implement-curry
+  - text: 面试题目
+    link: /question/implement-curry
     type: primary
   - text: 系统设计
-    link: /system-design/1-design-facebook-com
+    link: /question/design-facebook-web-app
     type: secondary
   - text: 博客
     link: /blog/how-to-contribute
@@ -25,7 +25,7 @@ features:
     details: 微信群内部福利
   - title: 模拟面试
     details: 微信群内部福利
-  
+
 footer: MIT Licensed | Copyright © 2022-present 前端小鱼二
 ---
 

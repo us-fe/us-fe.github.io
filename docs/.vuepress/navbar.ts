@@ -1,52 +1,77 @@
 import { HopeThemeNavbarConfig } from "vuepress-theme-hope";
 
+import css from "./sidebar/css.json";
+import design from "./sidebar/design.json";
+import problem from "./sidebar/problem.json";
+import question from "./sidebar/question.json";
+import quiz from "./sidebar/quiz.json";
+import reactQuiz from "./sidebar/react-quiz.json";
+import react from "./sidebar/react.json";
+import ui from "./sidebar/ui.json";
+
 const navbar: HopeThemeNavbarConfig = [
   {
     text: "首页",
     link: "/",
   },
   {
-    text: "基础面试题",
+<<<<<<< HEAD
+    text: "面试题目",
+=======
+    text: "面试题",
+>>>>>>> fcca9aa... 增加 bfe 面试题
     children: [
       {
-        text: "Coding",
-        link: "/problems/coding/1-implement-curry",
-        // children: [
-        //     '/problems/coding/1-implement-curry.md',
-        //     '/problems/coding/2-implement-curry-with-placeholder.md'
-        // ]
+        text: problem.text,
+        link: problem.children[0],
       },
       {
-        text: "JavaScript",
-        link: "/problems/javascript/1-promise-order",
-        // children: [
-        //     '/problems/javascript/1-promise-order.md',
-        // ]
+        text: quiz.text,
+        link: quiz.children[0],
       },
       {
-        text: "React",
-        link: "/problems/react/1-the-react-counter",
-        // children: [
-        //     '/problems/react/1-the-react-counter.md',
-        // ]
+        text: react.text,
+        link: react.children[0],
       },
       {
-        text: "UI Component",
-        link: "/problems/ui-component/1-implement-hacker-news.md",
+        text: reactQuiz.text,
+        link: reactQuiz.children[0],
+      },
+      {
+        text: question.text,
+        link: question.children[0],
+      },
+      {
+        text: css.text,
+        link: css.children[0],
+      },
+      {
+        text: design.text,
+        link: design.children[0],
+      },
+      {
+        text: ui.text,
+        link: ui.children[0],
+      },
+      {
+        text: "系统设计",
+        link: "/system-design/1-design-facebook-com",
       },
     ],
   },
+
   {
-    text: "系统设计",
-    link: "/system-design/1-design-facebook-com",
+    text: "电子书",
+    children: [
+      {
+        text: "You Don't Know JS",
+        link: "https://us-fe.github.io/ebooks/zh/you-dont-know-js-v1/up-going/ch1.html",
+      }
+    ]
   },
   {
     text: "博客",
     link: "/blog/how-to-contribute",
   },
-  {
-    text: "Markdown 增强语法",
-    link: "https://vuepress-theme-hope.github.io/v2/md-enhance/zh/guide/",
-  }
 ];
 export default navbar;
