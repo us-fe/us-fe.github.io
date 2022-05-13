@@ -15,7 +15,7 @@ You can see the UI of Hacker News at: [https://news.ycombinator.com/](https://ne
 
 Now, you are asked to write a component that displays the top 100 news. Look and feel shows in the below mockup
 
-![Hacker News Mockup](/problems/ui-component/1-implement-hacker-news/hacker-news.png)
+![Hacker News Mockup](/question/implement-hacker-news/hacker-news.png)
 
 You will need to use Hacker News API to fetch data and render in your UI component. Here's the API documentation: [HackerNews/API](https://github.com/HackerNews/API)
 
