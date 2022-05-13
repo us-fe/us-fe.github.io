@@ -4827,7 +4827,7 @@
     "@vuepress/core" "2.0.0-beta.38"
     "@vuepress/theme-default" "2.0.0-beta.38"
 
-"vuepress@^2.0.0-beta.39":
+"vuepress@2.0.0-beta.39":
   "integrity" "sha512-rAO0W+wlITVtUObo9vdZiLUZnlvCfIQ4wVst98yxjF9p5yeFYdCXCi1MLljag98Xl3W2u+rzUzfQGMhVR0jQnQ=="
   "resolved" "https://registry.npmjs.org/vuepress/-/vuepress-2.0.0-beta.39.tgz"
   "version" "2.0.0-beta.39"

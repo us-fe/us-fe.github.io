@@ -15,11 +15,7 @@ const navbar: HopeThemeNavbarConfig = [
     link: "/",
   },
   {
-<<<<<<< HEAD
-    text: "面试题目",
-=======
     text: "面试题",
->>>>>>> fcca9aa... 增加 bfe 面试题
     children: [
       {
         text: problem.text,
@@ -53,10 +49,6 @@ const navbar: HopeThemeNavbarConfig = [
         text: ui.text,
         link: ui.children[0],
       },
-      {
-        text: "系统设计",
-        link: "/system-design/1-design-facebook-com",
-      },
     ],
   },
 
@@ -66,8 +58,8 @@ const navbar: HopeThemeNavbarConfig = [
       {
         text: "You Don't Know JS",
         link: "https://us-fe.github.io/ebooks/zh/you-dont-know-js-v1/up-going/ch1.html",
-      }
-    ]
+      },
+    ],
   },
   {
     text: "博客",
