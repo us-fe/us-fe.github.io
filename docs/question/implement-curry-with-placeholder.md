@@ -8,6 +8,7 @@ tag:
   
 # implement curry() with placeholder support
 
+## Question
 This is a follow-up on [1\. implement curry()](/problem/implement-curry)
 
 please implement `curry()` which also supports placeholder.
@@ -37,7 +38,45 @@ more to read
 
 [https://github.com/planttheidea/curriable](https://github.com/planttheidea/curriable)
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param { (...args: any[]) => any } fn
+ * @returns { (...args: any[]) => any }
+ */
+function curry(fn) {
+  // your code here
+}
 
+
+curry.placeholder = Symbol()
+```
+:::
+    ::: code-group-item typescript
+```typescript
+interface Curry {
+  (fn: (...args: any[]) => any) : (...args: any[]) => any,
+  placeholder: Symbol
+}
+
+const curry: Curry = (fn) => {
+  // your code here
+}
+
+
+curry.placeholder = Symbol()
+```
+:::
+    
+::::
+
+
+## Related
+
++ [implement curry()](./implement-curry)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-curry-with-placeholder)
 
   

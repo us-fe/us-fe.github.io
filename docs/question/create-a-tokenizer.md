@@ -8,6 +8,7 @@ tag:
   
 # create a tokenizer
 
+## Question
 > Given a character sequence and a defined document unit, tokenization is the task of chopping it up into pieces, called tokens , perhaps at the same time throwing away certain characters, such as punctuation. ([ref](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html))
 
 For tasks of string processing, in many cases we are given a string, and are asked to understand this string in specific logic and then return the result.
@@ -57,7 +58,25 @@ Because it is trivial, in a real interview you talk to interviewer and implement
     
 2.  your method should return an [Generator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator) object.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} str
+ * @return {Generator}
+ */
+function* tokenize(str) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-a-tokenizer)
 
   

@@ -8,6 +8,7 @@ tag:
   
 # Virtual DOM III - Functional Component
 
+## Question
 > This is a follow-up on [118\. Virtual DOM II - createElement](https://bigfrontend.dev/problem/virtual-dom-II-createElement).
 
 In problem 118, you are asked to implement `createElement()` and `render()` function which supports intrinsic HTML elements, like `<p/>`, `<div/>` etc.
@@ -67,7 +68,48 @@ h(
 )
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * MyElement is the type your implementation supports
+ *
+ * type MyNode = MyElement | string
+ * type FunctionComponent = (props: object) => MyElement
+ */
 
+/**
+ * @param { string | FunctionComponent } type - valid HTML tag name or Function Component
+ * @param { object } [props] - properties.
+ * @param { ...MyNode} [children] - elements as rest arguments
+ * @return { MyElement }
+ */
+function createElement(type, props, ...children) {
+  // your code here
+}
+
+
+/**
+ * @param { MyElement }
+ * @returns { HTMLElement } 
+ */
+function render(myElement) {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+## Related
+
++ [Virtual DOM I](./Virtual-DOM-I)
++ [Virtual DOM II - createElement](./virtual-dom-II-createElement)
++ [Virtual DOM IV - JSX 1](./virtual-dom-iv-jsx-1)
++ [Virtual DOM V - JSX 2](./virtual-dom-v-jsx-2)
+##  Source
 [Source From](https://bigfrontend.dev/problem/virtual-DOM-III-Functional-Component)
 
   

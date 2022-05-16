@@ -8,6 +8,7 @@ tag:
   
 # convert snake_case to camelCase
 
+## Question
 Do you prefer [snake\_case](https://en.wikipedia.org/wiki/Snake_case) or [camelCase](https://en.wikipedia.org/wiki/Camel_case) ?
 
 Anyway, please create a function to convert snake\_case to camcelCase.
@@ -30,7 +31,25 @@ snakeToCamel('_double__underscore_')
 
 contiguous underscore `__`, leading underscore `_a`, and trailing underscors `a_` should be kept untouched.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} str
+ * @return {string}
+ */
+function snakeToCamel(str) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/convert-snake_case-to-camelCase)
 
   

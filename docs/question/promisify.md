@@ -8,6 +8,7 @@ tag:
   
 # implement promisify()
 
+## Question
 Let's take a look at following error-first callback.
 
 ```js
@@ -45,7 +46,25 @@ promisedFunc().then((data) => {
 })
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {(...args) => void} func
+ * @returns {(...args) => Promise<any}
+ */
+function promisify(func) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/promisify)
 
   

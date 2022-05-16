@@ -8,6 +8,7 @@ tag:
   
 # roman numerals to integer
 
+## Question
 [Roman numerals](https://en.wikipedia.org/wiki/Roman_numerals#Standard_form) are represented by combinations of following seven symbols, each with a fixed integer value.
 
 Symbol
@@ -63,7 +64,25 @@ romanToInteger('MMMCDXX')
 // 3420
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} str - roman numeral string
+ * @returns {number} integer
+ */
+function romanToInteger(str) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/roman-numerals-to-integer)
 
   

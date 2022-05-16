@@ -8,6 +8,7 @@ tag:
   
 # Improve a function
 
+## Question
 ```js
 
 // Given an input of array, 
@@ -44,7 +45,31 @@ _note_
 
 we only judge by the result, not the time cost. please submit the best approach you can.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {object[]} items
+ * @excludes { Array< {k: string, v: any} >} excludes
+ */
 
+/**
+ * @param {object[]} items
+ * @param { Array< {k: string, v: any} >} excludes
+ * @return {object[]}
+ */
+function excludeItems(items, excludes) {
+  
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/improve-a-function)
 
   

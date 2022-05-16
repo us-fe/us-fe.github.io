@@ -7,6 +7,7 @@ tag:
   
 # design youtube.com
 
+## Question
 As an example for web apps of videos, please design youtube.com.
 
 Performance and UX are critical here, maybe you can talk about
@@ -19,6 +20,9 @@ Performance and UX are critical here, maybe you can talk about
 6.  ...
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/design/design-youtube-com)
 
   

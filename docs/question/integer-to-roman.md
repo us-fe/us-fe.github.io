@@ -9,6 +9,7 @@ tag:
   
 # integer to roman numerals
 
+## Question
 > This is reverse of [133\. roman numerals to integer](/problem/roman-numerals-to-integer)
 
 [Roman numerals](https://en.wikipedia.org/wiki/Roman_numerals#Standard_form) are represented by combinations of following seven symbols, each with a fixed integer value.
@@ -66,7 +67,32 @@ integerToRoman(3420)
 // 'MMMCDXX'
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {number} integer
+ * @returns {string} str - roman numeral string
+ */
+function integerToRoman(num) {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+function integerToRoman(num: number): string {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/integer-to-roman)
 
   

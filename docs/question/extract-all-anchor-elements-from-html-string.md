@@ -6,8 +6,9 @@ tag:
 
 ---
   
-# extract all anchor element from HTML string 
+# extract all anchor element from HTML string
 
+## Question
 Given a HTML string, write a function to extract the anchor `<a/>` tag from it.
 
 ```js
@@ -28,7 +29,25 @@ extract(`
  //]
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} str
+ * @return {string[]}
+ */
+function extract(str) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/extract-all-anchor-elements-from-HTML-string )
 
   

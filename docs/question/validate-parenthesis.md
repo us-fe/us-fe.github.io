@@ -9,6 +9,7 @@ tag:
   
 # validate string of parentheses
 
+## Question
 Given a string containing only following characters:
 
 1.  parentheses : `(` or `)`
@@ -38,7 +39,25 @@ validate('{}}')
 
 What is time & space complexity of your approach ? Can you do it better?
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} str
+ * @return {boolean} 
+ */
+function validate(str) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/validate-parenthesis)
 
   

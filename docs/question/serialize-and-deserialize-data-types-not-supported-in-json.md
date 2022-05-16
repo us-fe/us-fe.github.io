@@ -8,6 +8,7 @@ tag:
   
 # serialize and deserialize data types not supported in JSON
 
+## Question
 Obviously, [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) and [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) are unable to handle data types that are not supported in JSON.
 
 ```ts
@@ -49,7 +50,58 @@ parse(stringify({a: undefined, b: NaN}) // {a: undefined, b: NaN}
 
 You can use JSON.stringify() and JSON.parse() in your code or write your own.
 
+## Code
+:::: code-group
+::: code-group-item javascript
+```javascript
+/**
+ * type SerializablePrimitives = undefined | null | number | string | bigint | boolean
 
+  * type Serializable = {
+    [index: string]: Serializable
+  } | Serializable[] | SerializablePrimitives
+*/
+
+/**
+ * @params {Serializable} data
+ * @returns {string}
+ */
+const stringify = (data) => {
+  // your code here
+}
+
+/**
+ * @params {string} data
+ * @returns {Serializable}
+ */
+const parse = (data) => {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript:active
+```typescript
+type SerializablePrimitives = undefined | null | number | string | bigint | boolean
+
+type Serializable = {
+  [index: string]: Serializable
+} | Serializable[] | SerializablePrimitives
+
+const stringify = (data: Serializable): string => {
+  // your code here
+}
+
+const parse = (data: string): Serializable => {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/serialize-and-deserialize-data-types-not-supported-in-JSON)
 
   

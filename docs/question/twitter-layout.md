@@ -8,6 +8,7 @@ tag:
   
 # Twitter's website layout
 
+## Question
 Open Twitter's website and change the window size, you'll notice that layout changes responsively.
 
 Let's do something similar in this problem, suppose we have HTML structure as below.
@@ -31,6 +32,9 @@ Now please complete the CSS to satisfy following requirement
 It is a bit hard to explain clearly, but following screenshots might be easier to understand.
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/css/twitter-layout)
 
   

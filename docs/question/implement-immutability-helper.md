@@ -8,6 +8,7 @@ tag:
   
 # implement Immutability helper
 
+## Question
 If you use React, you would meet the scenario to copy the state for a slight change.
 
 For example, for following state
@@ -137,7 +138,38 @@ const newArr = update(arr, {0: {$apply: (item) => item * 2}})
 // [2, 2, 3, 4]
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {any} data
+ * @param {Object} command
+ */
+function update(data, command) {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+type Command = {
+  $push?: any,
+  $set?: any
+  $apply?: (arg: any) => any
+  $merge?: object
+}
+function update(data: object, command: Command): void {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-Immutability-helper)
 
   

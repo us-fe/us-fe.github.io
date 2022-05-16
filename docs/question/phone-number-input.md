@@ -7,6 +7,7 @@ tag:
   
 # phone number input
 
+## Question
 Create a `PhoneNumberInput` component.
 
 1.  only accepts numerical digits
@@ -23,7 +24,30 @@ What if user removes some digits in the middle, does caret jumps to the end in y
 
 > caret position is not covered in our tests.
 
+## Code
+:::: code-group
+::: code-group-item typescript:active
+```typescript
+import React from 'react'
+export function PhoneNumberInput() {
+  // your code here
+  return <input data-testid="phone-number-input"/>
+}
 
+// if you want to try your code on the right panel
+// remember to export App() component like below
+
+// export function App() {
+//   return <div>your app</div>
+// }
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/react/phone-number-input)
 
   

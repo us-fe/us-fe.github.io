@@ -8,6 +8,7 @@ tag:
   
 # implement async helper - `parallel()`
 
+## Question
 This problem is related to [29\. implement async helper - `sequence()`](https://bigfrontend.dev/problem/implement-async-helper-sequence).
 
 You are asked to implement an async function helper, `parallel()` which works like `Promise.all()`. Different from `sequence()`, the async function doesn't wait for each other, rather they are all triggered together.
@@ -59,7 +60,38 @@ all((error, data) => {
 
 When error occurs, only first error is passed down to the last. Later errors or data are ignored.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/*
+type Callback = (error: Error, data: any) => void
 
+type AsyncFunc = (
+   callback: Callback,
+   data: any
+) => void
+
+*/
+
+/**
+ * @param {AsyncFunc[]} funcs
+ * @return {(callback: Callback) => void}
+ */
+function parallel(funcs){
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+## Related
+
++ [implement async helper - `sequence()`](./implement-async-helper-sequence)
++ [implement async helper - `race()`](./implement-async-helper-race)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-async-helper-parallel)
 
   

@@ -7,6 +7,7 @@ tag:
   
 # golden-ratio rectangle
 
+## Question
 Let's create a golden-ratio rectangle, which means width/height = 1.618.
 
 This rectangle should have the fixed ratio even when width changes.
@@ -16,6 +17,9 @@ This rectangle should have the fixed ratio even when width changes.
 ```
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/css/golden-ratio-rectangle)
 
   

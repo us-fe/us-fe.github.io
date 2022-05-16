@@ -8,6 +8,7 @@ tag:
   
 # create an Observable
 
+## Question
 Have you ever used [RxJS](https://rxjs-dev.firebaseapp.com/guide/overview) before? The most important concept in it is [Observable](https://rxjs-dev.firebaseapp.com/guide/observable) and [Observer](https://rxjs-dev.firebaseapp.com/guide/observer).
 
 Observable defines how values are delivered to Observer. Observer is just a set of callbacks.
@@ -89,7 +90,31 @@ _Further Reading_
 
 [https://github.com/tc39/proposal-observable](https://github.com/tc39/proposal-observable)
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+class Observable {
+  
+  constructor(setup) {
+    
+  }
+ 
+  subscribe(subscriber) {
+    
+  }
+}
+```
+:::
+    
+::::
 
+
+## Related
+
++ [implement Observable.from()](./implement-Observable-from)
++ [implement Observable Subject](./implement-Observable-Subject)
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-an-Observable)
 
   

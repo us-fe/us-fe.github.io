@@ -8,6 +8,7 @@ tag:
   
 # flex layout 1
 
+## Question
 Suppose we have to layout a bunch of items with below requirements.
 
 1.  fill out to width:100px, but stretch to fill the available space and shrink if not enough
@@ -24,6 +25,9 @@ HTML structure is
 ```
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/css/flex-layout-1)
 
   

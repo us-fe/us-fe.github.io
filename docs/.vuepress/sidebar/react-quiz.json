@@ -1,17 +1,17 @@
 {
-  "text": "React Quiz",
-  "collapsible": true,
-  "children": [
-    "/question/react-re-render-1",
-    "/question/react-re-render-2",
-    "/question/react-re-render-3",
-    "/question/react-re-render-4",
-    "/question/react-re-render-5",
-    "/question/suspense-1",
-    "/question/suspense-2",
-    "/question/react-rerender-context",
-    "/question/uselayouteffect",
-    "/question/callback-props",
-    "/question/useeffect"
-  ]
+ "text": "React Quiz",
+ "collapsible": true,
+ "children": [
+  "/question/react-re-render-1",
+  "/question/react-re-render-2",
+  "/question/react-re-render-3",
+  "/question/react-re-render-4",
+  "/question/react-re-render-5",
+  "/question/suspense-1",
+  "/question/suspense-2",
+  "/question/react-rerender-context",
+  "/question/uselayouteffect",
+  "/question/callback-props",
+  "/question/useeffect"
+ ]
 }

@@ -9,6 +9,7 @@ tag:
   
 # create a Priority Queue in JavaScript
 
+## Question
 [Priority Queue](https://storm.cis.fordham.edu/~yli/documents/CISC2200Spring15/Graph.pdf) is a commonly used data structure in algorithm problem. Especially useful for **Top K** problem with a huge amount of input data, since it could avoid sorting the whole but keep a fixed-length sorted portion of it.
 
 Since there is no built-in Priority Queue in JavaScript, in a real interview, you should tell interview saying that "Suppose we already have a Priority Queue Class I can use", there is no time for you to write a Priority Queue from scratch.
@@ -79,7 +80,57 @@ pq.poll()
 // 2 is removed, only 5 is left
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+// complete the implementation
+class PriorityQueue {
+  /**
+   * @param {(a: any, b: any) => -1 | 0 | 1} compare - 
+   * compare function, similar to parameter of Array.prototype.sort
+   */
+  constructor(compare) {
+    this.compare = compare;
+  }
 
+  /**
+   * return {number} amount of items
+   */
+  size() {
+
+  }
+
+  /**
+   * returns the head element
+   */
+  peek() {
+
+  }
+
+  /**
+   * @param {any} element - new element to add
+   */
+  add(element) {
+   
+  }
+
+  /**
+   * remove the head element
+   * @return {any} the head element
+   */
+  poll() {
+    
+  }
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-a-priority-queue-in-JavaScript)
 
   

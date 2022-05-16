@@ -7,6 +7,7 @@ tag:
   
 # Explain the common performance metrics
 
+## Question
 In order to do performance tuning we need to first know how to evaluate the performance.
 
 Here are metrics used in Chrome Lighthouse, can you explain them ?
@@ -32,6 +33,9 @@ Here are metrics used in Chrome Lighthouse, can you explain them ?
 well some of them are deprecated. It would be great if you can talk about your past experience of using one of them.
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/question/Explain-the-common-performance-metrics)
 
   

@@ -8,6 +8,7 @@ tag:
   
 # Create a simple store for DOM element
 
+## Question
 We have `Map` in es6, so we could use any data as key, such as DOM element.
 
 ```js
@@ -44,7 +45,42 @@ You can create a simple general Map polyfill. Or since you are asked to support 
 
 What is the Time / Space cost of your solution?
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+class NodeStore {
+   /**
+   * @param {Node} node
+   * @param {any} value
+   */
+  set(node, value) {
+   
+  }
+  /**
+   * @param {Node} node
+   * @return {any}
+   */
+  get(node) {
+   
+  }
+  
+  /**
+   * @param {Node} node
+   * @return {Boolean}
+   */
+  has(node) {
+    
+  }
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-a-simple-store-for-DOM-node)
 
   

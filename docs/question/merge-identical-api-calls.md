@@ -8,6 +8,7 @@ tag:
   
 # merge identical API calls
 
+## Question
 Suppose we have a utility function `getAPI()` which fetches data.
 
 ```ts
@@ -84,7 +85,37 @@ For test purpose, please provide a clear method to clear all cache.
 getAPIWithMerging.clearCache()
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+// getAPI is bundled with your code, config will only be some plain objects.
+// const getAPI = <T>(path: string, config: SomeConfig): Promise<T> => { ... }
 
+
+// you code here maybe, if you want some outer scope.
+
+/**
+ * @param {string} path
+ * @param {object} config
+ * only plain objects/array made up serializable primitives
+ * @returns {Promise<any>}
+ */
+function getAPIWithMerging(path, config) {
+  // your code here
+}
+
+getAPIWithMerging.clearCache = () => {
+   // your code here
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/merge-identical-API-calls)
 
   

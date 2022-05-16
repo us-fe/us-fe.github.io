@@ -8,6 +8,7 @@ tag:
   
 # auto-retry Promise on rejection
 
+## Question
 For a web application, fetching API data is a common task.
 
 But the API calls might fail because of Network problems. Usually we could show a screen for Network Error and ask users to retry.
@@ -18,7 +19,26 @@ You are asked to create a `fetchWithAutoRetry(fetcher, count)`, which automatica
 
 For the problem here, there is no need to detect network error, you can just retry on all promise rejections.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {() => Promise<any>} fetcher
+ * @param {number} maximumRetryCount
+ * @return {Promise<any>}
+ */
+function fetchWithAutoRetry(fetcher, maximumRetryCount) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/retry-promise-on-rejection)
 
   

@@ -9,6 +9,7 @@ tag:
   
 # detect circle in linked list
 
+## Question
 A [Singly Linked List](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list) is a bunch of nodes linked in one direction.
 
 ```ts
@@ -33,7 +34,25 @@ Can you write a function to detect it?
 
 What is the space cost for your approach? Can you solve it **without extra space**?
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {Node} head
+ * @return {boolean}
+ */
+function hasCircle(head) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/detect-circle-in-linked-list)
 
   

@@ -8,6 +8,7 @@ tag:
   
 # create your own Cookie
 
+## Question
 We can get and set cookie by `document.cookie`.
 
 ```js
@@ -55,7 +56,27 @@ document.myCookie
 
 3.  in your code, please enable `myCookie` in `install()` and remove the logic in `uninstall()`, these are used in judging.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+// enable myCookie
+function install() {
+  // your code here
+}
 
+// disable myCookie
+function uninstall() {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-your-own-Cookie)
 
   

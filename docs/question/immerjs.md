@@ -8,6 +8,7 @@ tag:
   
 # implement Immer produce()
 
+## Question
 In [12\. implement Immutability helper](/problem/implement-Immutability-helper), we are asked to implement immutability helpers.
 
 These helpers requires extra effort for us to remember how to use them, while [Immer](https://immerjs.github.io/immer/produce) takes another approach which might be easier to use.
@@ -63,7 +64,35 @@ expect(newState[2]).not.toBe(state[2])
 2.  You only need to support basic usage on plain object and array, things like Map/Set, Auto freezing .etc are out of scope.
 3.  You need to make sure unchanged parts are not cloned.
 
+## Code
+:::: code-group
+::: code-group-item javascript
+```javascript
+/**
+ * @param {any} base
+ * @param {(draft: any) => any} recipe
+ * @returns {any}
+ */
+function produce(base, recipe) {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript:active
+```typescript
+type ProduceFunc = <T>(base: T, receipe: (draft: T) => any) => void
 
+const produce: ProduceFunc = (base, recipe) => {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/immerjs)
 
   

@@ -9,6 +9,7 @@ tag:
   
 # remove duplicate characters in a string
 
+## Question
 Given a string, write a function to remove the duplicate characters to make sure that each character only occurs once.
 
 For example
@@ -32,7 +33,25 @@ Above all substrings subsequences ([\*](https://bigfrontend.dev/problem/112/disc
 
 All input only contains valid lowercase alphabets only.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} str
+ * @return {string}
+ */
+function smallestUniqueSubstr(str) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/remove-duplicate-letters-in-a-string)
 
   

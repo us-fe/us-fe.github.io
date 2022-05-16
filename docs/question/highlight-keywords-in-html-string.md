@@ -9,6 +9,7 @@ tag:
   
 # highlight keywords in HTML string
 
+## Question
 Suppose you are implementing an auto-complete in search input.
 
 When keywords are typed, you need to **highlight the keywords**, how would you do that?
@@ -43,7 +44,25 @@ highlightKeywords(
 
 note that `space` should not be included.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} html
+ * @param {string[]} keywords
+ */
+function highlightKeywords(html, keywords) {
+  // your code here
+};
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/highlight-keywords-in-HTML-string)
 
   

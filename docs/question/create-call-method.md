@@ -8,6 +8,7 @@ tag:
   
 # create your own `Function.prototype.call`
 
+## Question
 [Function.prototype.call](https://tc39.es/ecma262/#sec-function.prototype.call) is very useful when we want to alter the `this` of a function.
 
 Can you implement your own `myCall`, which returns the same result as `Function.prototype.call`?
@@ -18,7 +19,21 @@ Your implementation should follow above spec and do what _non_ Strict Mode does.
 
 `Function.prototype.call/apply/bind` and [Reflect.apply](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Reflect/apply) should not be used.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+Function.prototype.mycall = function(thisArg, ...args) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-call-method)
 
   

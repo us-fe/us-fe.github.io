@@ -8,6 +8,7 @@ tag:
   
 # decode message
 
+## Question
 Your are given a 2-D array of characters. There is a hidden message in it.
 
 ```js
@@ -30,7 +31,32 @@ _notes_
 
 if no characters could be collected, return empty string
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string[][]} message
+ * @return {string}
+ */
+function decode(message) {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+function decode(message: string[][]): string {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/decode-message)
 
   

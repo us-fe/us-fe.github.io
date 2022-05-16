@@ -8,6 +8,7 @@ tag:
   
 # flatten Thunk
 
+## Question
 Suppose we have a Callback type
 
 ```ts
@@ -51,7 +52,25 @@ _note_
 
 Once error occurs, the rest uncalled functions should be skipped
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {Thunk} thunk
+ * @return {Thunk}
+ */
+function flattenThunk(thunk) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/flatten-Thunk)
 
   

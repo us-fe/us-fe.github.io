@@ -8,6 +8,7 @@ tag:
   
 # create a fake timer (setInterval)
 
+## Question
 This is a follow-up on [36\. create a fake timer(setTimeout)](https://bigfrontend.dev/problem/create-a-fake-timer)
 
 Like `setTimeout`, `setInterval` also is not accurate. (please refer [Event Loop](https://javascript.info/event-loop) for detail).
@@ -69,7 +70,35 @@ _Note_
 
 Only `Date.now()` is used when judging your code, you can ignore other time related apis.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+class FakeTimer {
+  install() {
+    // replace window.setInterval, window.clearInterval, Date.now
+    // with your implementation
+  }
+  
+  uninstall() {
+    // restore the original implementation of
+    // window.setInterval, window.clearInterval, Date.now
+  }
+  
+  tick() {
+    // run the scheduled functions without waiting
+  }
+}
+```
+:::
+    
+::::
 
+
+## Related
+
++ [create a fake timer(setTimeout)](./create-a-fake-timer)
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-a-fake-timer-setInterval)
 
   

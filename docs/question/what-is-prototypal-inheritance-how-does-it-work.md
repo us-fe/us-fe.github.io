@@ -7,6 +7,7 @@ tag:
   
 # What is Prototypal Inheritance? How does it work?
 
+## Question
 It is hard to explain something clearly. I'd suggest you take a top-down approach for this kind of abstract concept.
 
 for example.
@@ -22,6 +23,9 @@ If you are not familiar with Prototype, I recommend you first thoroughly read th
 Good Luck!
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/question/what-is-prototypal-inheritance-how-does-it-work)
 
   

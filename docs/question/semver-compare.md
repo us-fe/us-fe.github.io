@@ -8,6 +8,7 @@ tag:
   
 # semver compare
 
+## Question
 Please implement a function to compare 2 [semver](https://semver.org/) strings.
 
 ```js
@@ -21,7 +22,33 @@ compare('5.0.1', '5.0.1')
 // 0, meaning they are equal.
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} v1
+ * @param {string} v2
+ * @returns 0 | 1 | -1
+ */
+function compare(v1, v2) {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+function compare(v1: string, v2: string): 0 | 1 | -1 {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/semver-compare)
 
   

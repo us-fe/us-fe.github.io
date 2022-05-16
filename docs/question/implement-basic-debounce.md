@@ -9,6 +9,7 @@ tag:
   
 # implement basic debounce()
 
+## Question
 Debounce is a common technique used in Web Application, in most cases using [lodash solution](https://lodash.com/docs/4.17.15#debounce) would be a good choice.
 
 could you implement your own version of basic `debounce()`?
@@ -56,7 +57,37 @@ const run = (input) => {
 expect(run(['A@0', 'B@2', 'C@3'])).toEqual(['C@5'])
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {(...args: any[]) => any} func
+ * @param {number} wait
+ * @returns {(...args: any[]) => any}
+ */
+function debounce(func, wait) {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+function debounce<T extends (...args: any[]) => any>(func: T, wait: number): T {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+## Related
+
++ [implement basic throttle()](./implement-basic-throttle)
++ [implement throttle() with leading & trailing option](./implement-throttle-with-leading-and-trailing-option)
++ [implement debounce() with leading & trailing option](./implement-debounce-with-leading-and-trailing-option)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-basic-debounce)
 
   

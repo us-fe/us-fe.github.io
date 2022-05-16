@@ -8,6 +8,7 @@ tag:
   
 # uglify CSS class names
 
+## Question
 If you use [css-loader](https://github.com/webpack-contrib/css-loader) in your webpack project, `localIdentName` could be used to transform class names, like below:
 
 ```js
@@ -67,7 +68,39 @@ getUniqueClassName()
 // 'a'
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @returns {string}
+ */
+function getUniqueClassName() {
+  // your code here
+}
 
+getUniqueClassName.reset = function() {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+function getUniqueClassName(): string {
+  // your code here
+}
+
+getUniqueClassName.reset = function() {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/unique-class-name)
 
   

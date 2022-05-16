@@ -9,6 +9,7 @@ tag:
   
 # Implement a Stack by using Queue
 
+## Question
 > This is reversed problem of [13\. Implement a Queue by using Stack](https://bigfrontend.dev/problem/implement-a-queue-by-using-stack)
 
 In JavaScript, we could use array to work as both a Stack or a queue.
@@ -55,7 +56,53 @@ _note_
 
 you can only use Queue as provided. Don't use Array, it is not what this is for.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/* you can use this Queue which is bundled together with your code
+class Queue {
+  enqueue(element) {
+    // add new element to the queue
+  }
+  peek() { 
+    // return the head element
+  }
+  dequeue() { 
+    // remove head element from the queue
+  }
+  size() { 
+    // return the queue size
+  }
+}
+*/
 
+
+// you need to complete the following Stack, using only Queue
+class Stack {
+  push(element) {
+    // push an element into the stack
+  }
+  peek() { 
+    // get the top element 
+  }
+  pop() { 
+    // remove top element from stack
+  }
+  size() { 
+    // return count of elements
+  }
+}
+```
+:::
+    
+::::
+
+
+## Related
+
++ [Implement a Queue by using Stack](./implement-a-queue-by-using-stack)
+##  Source
 [Source From](https://bigfrontend.dev/problem/Implement-a-Stack-by-using-Queue)
 
   

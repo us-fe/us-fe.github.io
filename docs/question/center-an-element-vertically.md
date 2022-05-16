@@ -7,6 +7,7 @@ tag:
   
 # center an element vertically
 
+## Question
 This is a very basic question and good to be the first CSS problem on BFE.dev.
 
 Suppose you have an HTML structure as below
@@ -20,6 +21,9 @@ Suppose you have an HTML structure as below
 Please center the inner div vertically without changing their dimensions and colors.
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/css/center-an-element-vertically)
 
   

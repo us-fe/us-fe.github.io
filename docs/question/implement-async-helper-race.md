@@ -8,6 +8,7 @@ tag:
   
 # implement async helper - `race()`
 
+## Question
 This problem is related to [30\. implement async helper - `parallel()`](https://bigfrontend.dev/problem/implement-async-helper-parallel).
 
 You are asked to implement an async function helper, `race()` which works like [Promise.race()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race). Different from `parallel()` that waits for all functions to finish, `race()` will finish when any function is done or run into error.
@@ -59,7 +60,38 @@ first((error, data) => {
 
 When error occurs, only first error is passed down to the last. Later errors or data are ignored.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/*
+type Callback = (error: Error, data: any) => void
 
+type AsyncFunc = (
+   callback: Callback,
+   data: any
+) => void
+
+*/
+
+/**
+ * @param {AsyncFunc[]} funcs
+ * @return {(callback: Callback) => void}
+ */
+function race(funcs){
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+## Related
+
++ [implement async helper - `sequence()`](./implement-async-helper-sequence)
++ [implement async helper - `parallel()`](./implement-async-helper-parallel)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-async-helper-race)
 
   

@@ -8,6 +8,7 @@ tag:
   
 # implement classNames()
 
+## Question
 If using React, you can set the prop `className` to add class name to an element, it is string so you can add multiple class names like this:
 
 ```js
@@ -65,7 +66,25 @@ classNames(['BFE', [{dev: true}, ['is', [obj]]]])
 
 It is not the goal to reimplement the original package, so the spec might be a little different, please follow the above description.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {any[]} args
+ * @returns {string}
+ */
+function classNames(...args) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-classnames)
 
   

@@ -15,20 +15,24 @@ var turndownService = new TurndownService({
 
 const bfes = [
   {
+    text: "Coding Problem",
     url: "https://bigfrontend.dev/problem",
     tags: ["Coding", "JavaScript"],
   },
   {
+    text: "React",
     url: "https://bigfrontend.dev/react",
     tags: ["Coding", "React"],
   },
 
   {
+    text: "CSS",
     url: "https://bigfrontend.dev/css",
     tags: ["Coding", "CSS"],
   },
 
   {
+    text: "JavaScript Quiz",
     url: "https://bigfrontend.dev/quiz",
     tags: ["Quiz", "JavaScript"],
   },
@@ -37,15 +41,18 @@ const bfes = [
   //   tags: ["Coding", "TypeScript"],
   // },
   {
+    text: "React Quiz",
     url: "https://bigfrontend.dev/react-quiz",
     tags: ["Quiz", "React"],
   },
   {
+    text: "Question",
     url: "https://bigfrontend.dev/question",
     tags: ["Question"],
   },
 
   {
+    text: "System Design",
     url: "https://bigfrontend.dev/design",
     tags: ["SystemDesign"],
   },
@@ -98,9 +105,13 @@ async function getQuestionList(url, tags) {
         }
       });
 
+    const path = href.split("/")[2];
+    if (!path) {
+      console.error("no path", href);
+    }
     list.push({
-      path: href.split("/")[2].replace(/\d+-/, "").toLocaleLowerCase(),
-      title: title.replace(/\d+(\.|\:) /, "").replace(/\d+-/, ""),
+      path: getPath(path),
+      title: getTitle(title),
       href: domain + href,
       tags: qTags,
     });
@@ -110,7 +121,21 @@ async function getQuestionList(url, tags) {
   return list;
 }
 
-async function getQuestionDesc(href) {
+function getPath(path) {
+  const newPath = path.replace(/\d+-/, "").toLocaleLowerCase().trim();
+  if (!newPath) {
+    console.error("no path", path);
+  }
+  return newPath;
+}
+function getTitle(title) {
+  return title
+    .replace(/\d+(\.|\:) /, "")
+    .replace(/\d+-/, "")
+    .trim();
+}
+
+async function getQuestionDetail(href) {
   var res = await fetch(href, {
     headers: {
       accept:
@@ -142,12 +167,79 @@ async function getQuestionDesc(href) {
   const des = $(".MarkdownView-kau4pv-0").html();
   var markdown = turndownService.turndown(des);
 
+  const __NEXT_DATA__ = $("#__NEXT_DATA__").html();
+  var json = {};
+  try {
+    json = JSON.parse(__NEXT_DATA__);
+  } catch (e) {}
+
+  // console.log("__NEXT_DATA__", JSON.stringify(json, null, " "));
+
   // console.log(markdown);
-  return markdown;
+  return {
+    markdown,
+    json,
+  };
 }
 
 async function writeQuestion(q) {
-  const { title, desc, href, tags, path: filename } = q;
+  const { title, markdown, json, href, tags, path: filename } = q;
+  const detail = json.props.pageProps.item;
+
+  var related = (detail.related || [])
+    .map((r) => {
+      // "permalink": "get-DOM-tree-height",
+      // "title": "58. get DOM tree height"
+      return `+ [${getTitle(r.title)}](./${r.permalink})`;
+    })
+    .join("\n");
+
+  if (related) {
+    related = `## Related\n\n` + related;
+  }
+
+  var files = detail?.editConfig?.files || [];
+
+  var code = "";
+  var blocks = "";
+  files.forEach((f) => {
+    const langs = Object.entries(f.supportedLangs);
+
+    langs.forEach(([k, v]) => {
+      // console.log(k, v);
+      blocks += `::: code-group-item ${k}${v.default ? ":active" : ""}
+\`\`\`${k}
+${v.skeletonEn.trim()}
+\`\`\`
+:::
+    `;
+    });
+  });
+
+  if (blocks) {
+    code = `
+## Code
+:::: code-group
+${blocks}
+::::`;
+  }
+
+  var snippet = detail.snippet || "";
+  var answer = detail.answer || "";
+  if (snippet) {
+    snippet = `## Snippet
+\`\`\`js
+${snippet.trim()}
+\`\`\`
+    `;
+  }
+  if (answer) {
+    answer = `## Answer
+\`\`\`js
+${answer.trim()};
+\`\`\`
+`;
+  }
 
   var tag = "";
   tags.forEach((t) => (tag += `  - ${t}\n`));
@@ -162,9 +254,13 @@ ${tag}
   
 # ${title}
 
-${desc}
-
-
+## Question
+${markdown}
+${code}
+${snippet}
+${answer}
+${related}
+##  Source
 [Source From](${href})
 
   `;
@@ -183,7 +279,7 @@ function getQuestionFilePath(filename) {
   return path.resolve(path.dirname(""), "docs/question/", filename + ".md");
 }
 
-async function writeSidebar(list, text) {
+async function writeSidebar(list, text, filename) {
   const json = {
     text: text,
     collapsible: true,
@@ -197,7 +293,7 @@ async function writeSidebar(list, text) {
   const filepath = path.resolve(
     path.dirname(""),
     "docs/.vuepress/sidebar/",
-    text.toLowerCase() + ".json"
+    filename + ".json"
   );
   // console.log(filepath);
 
@@ -206,28 +302,40 @@ async function writeSidebar(list, text) {
 
 // console.log(list);
 
-async function handleBFE(bfe) {
+async function handleBFE(bfe, len, forceUpdate) {
   var list = await getQuestionList(bfe.url, bfe.tags);
+  var size = list.length;
+  if (len) {
+    size = len;
+  }
 
-  list.forEach(async (q) => {
+  list.slice(0, size).forEach(async (q) => {
     // getQuestion(t.href);
-
     try {
       const filepath = getQuestionFilePath(q.path);
-      if (!fs.existsSync(filepath)) {
-        const desc = await getQuestionDesc(q.href);
-        q.desc = desc;
-        writeQuestion(q);
-        console.log("done", q.path);
+      // 不需要强制更新 且 没有这个路径
+      if (forceUpdate || !fs.existsSync(filepath)) {
+        const { markdown, json } = await getQuestionDetail(q.href);
+        q.markdown = markdown;
+        q.json = json;
+
+        if (q.path == "undefined") {
+          // console.error(q);
+        } else {
+          writeQuestion(q);
+          console.log("done", q.path);
+        }
       }
     } catch (e) {
-      console.error(e);
+      // console.error(e);
       console.log(`${q.href} fail`);
     }
   });
 
-  writeSidebar(list.reverse(), bfe.url.replace(domain + "/", ""));
+  writeSidebar(list.reverse(), bfe.text, bfe.url.replace(domain + "/", ""));
 }
+
+// handleBFE(bfes[0], 20, true);
 
 bfes.forEach((bfe) => {
   handleBFE(bfe);

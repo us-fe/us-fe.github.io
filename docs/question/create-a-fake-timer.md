@@ -8,6 +8,7 @@ tag:
   
 # create a fake timer(setTimeout)
 
+## Question
 `setTimeout` adds task in to a task queue to be handled later, the time actually is no accurate. ([Event Loop](https://javascript.info/event-loop)).
 
 This is OK in general web application, but might be problematic in test.
@@ -68,7 +69,35 @@ _Note_
 
 Only `Date.now()` is used when judging your code, you can ignore other time related apis.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+class FakeTimer {
+  install() {
+    // replace window.setTimeout, window.clearTimeout, Date.now
+    // with your implementation
+  }
+  
+  uninstall() {
+    // restore the original implementation of
+    // window.setTimeout, window.clearTimeout, Date.now
+  }
+  
+  tick() {
+    // run the scheduled functions without waiting
+  }
+}
+```
+:::
+    
+::::
 
+
+## Related
+
++ [create a fake timer (setInterval)](./create-a-fake-timer-setInterval)
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-a-fake-timer)
 
   

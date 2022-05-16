@@ -10,6 +10,7 @@ tag:
   
 # find available meeting slots
 
+## Question
 `[start, end]` is a time interval, with all integers from 0 to 24.
 
 Given schedules for all team members,
@@ -35,7 +36,27 @@ _Notes_
 1.  the input schedule intervals might be unsorted
 2.  one member's schedule might have overlapping intervals.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+// type Interval = [number, number]
 
+/**
+ * @param {Interval[][]} schedules
+ * @return {Interval[]}
+ */
+function findMeetingSlots(schedules) {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/find-available-meeting-slots)
 
   

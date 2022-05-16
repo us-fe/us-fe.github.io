@@ -8,6 +8,7 @@ tag:
   
 # sticky footer
 
+## Question
 "Sticky footer" is a layout pattern that
 
 1.  if content is short, the footer "sticks" to the bottom
@@ -28,6 +29,9 @@ Suppose we have some HTML structure:
 Blow is how Sticky Footer pattern should behave.
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/css/sticky-footer)
 
   

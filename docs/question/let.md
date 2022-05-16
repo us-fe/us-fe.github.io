@@ -5,22 +5,24 @@ tag:
 
 ---
   
-# function
+# let
 
 ## Question
 What does the code snippet to the right output by `console.log`?
 
 ## Snippet
 ```js
-function foo(){ console.log(1) }
-var foo = 2
-function foo(){ console.log(3) }
-foo()
+let a = 1;
+(function() {
+  let foo = () => a
+  let a = 2;
+  console.log(foo())
+}())
 ```
     
 
 
 ##  Source
-[Source From](https://bigfrontend.dev/quiz/function)
+[Source From](https://bigfrontend.dev/quiz/let)
 
   

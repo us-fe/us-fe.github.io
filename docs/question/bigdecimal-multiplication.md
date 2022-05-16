@@ -9,6 +9,7 @@ tag:
   
 # BigDecimal multiplication
 
+## Question
 > This is a follow-up on [126\. BigDecimal addition](https://bigfrontend.dev/problem/decimal-addition)
 
 In this problem, you are asked to **implement the multiplication of two decimals with arbitrary digits**.
@@ -38,7 +39,26 @@ multiply(
 2.  trailing zeroes in the result should be removed.
 3.  Big.js defaults return exponential notation when it is too big, in this problem, **don't do that**
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} a 
+ * @param {string} b
+ * @return {string}
+ */
+function multiply(a, b) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/bigdecimal-multiplication)
 
   

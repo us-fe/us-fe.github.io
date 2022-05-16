@@ -10,6 +10,7 @@ tag:
   
 # create `_.cloneDeep()`
 
+## Question
 `Object.assign()` could be used to do shallow copy, while for recursive deep copy, [\_.cloneDeep](https://lodash.com/docs/4.17.15#cloneDeep) could be very useful.
 
 Can you create your own `_.cloneDeep()`?
@@ -22,7 +23,21 @@ The lodash implementation actually covers a lot of data types, for simplicity, y
 
 > There is built-in [structuredClone()](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone) now, but don't use this to practice
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+function cloneDeep(data) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-cloneDeep)
 
   

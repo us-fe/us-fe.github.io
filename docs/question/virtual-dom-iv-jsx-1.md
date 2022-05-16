@@ -8,6 +8,7 @@ tag:
   
 # Virtual DOM IV - JSX 1
 
+## Question
 If you are using React, you must be familiar with [JSX](https://facebook.github.io/jsx/).
 
 With JSX syntax support, transpilers are able to understand below non-standard code directly in JavaScript.
@@ -133,7 +134,65 @@ expect(result).toEqual(h('a', null, 'bfe.dev'))
     
     > The test cases only cover some of the common errors.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {code} string
+ * @returns {any} AST 
+ */
+function parse(code) {
+  // your code here
+}
 
+/**
+ * @param {any} your AST
+ * @returns {string} 
+ */
+function generate(ast) {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+type JSXOpeningElement = {
+  tag: string
+}
+
+type JSXClosingElement = {
+  tag: string
+}
+
+type JSXChildren = string[]
+
+type JSXElement= {
+  openingElement: JSXOpeningElement
+  children: JSXChildren
+  closingElement: JSXClosingElement
+}
+
+function parse(code: string): JSXElement {
+  // your code here
+}
+
+function generate(ast: JSXElement): string {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+## Related
+
++ [Virtual DOM I](./Virtual-DOM-I)
++ [Virtual DOM II - createElement](./virtual-dom-II-createElement)
++ [Virtual DOM III - Functional Component](./virtual-DOM-III-Functional-Component)
++ [Virtual DOM V - JSX 2](./virtual-dom-v-jsx-2)
+##  Source
 [Source From](https://bigfrontend.dev/problem/virtual-dom-iv-jsx-1)
 
   

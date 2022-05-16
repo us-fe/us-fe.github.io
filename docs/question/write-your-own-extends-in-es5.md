@@ -8,6 +8,7 @@ tag:
   
 # write your own `extends` in es5
 
+## Question
 I believe you've used [extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends) keyword in you JavaScript programs before.
 
 Could you implement a `myExtends()` function in ES5 to mimic the behavior of `extends`?
@@ -54,7 +55,21 @@ SubType.prototype.method = function() {}
 SubType.staticSub = 'staticSub'
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+const myExtends = (SuperType, SubType) => {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/write-your-own-extends-in-es5)
 
   

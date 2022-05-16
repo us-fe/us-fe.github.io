@@ -9,6 +9,7 @@ tag:
   
 # implement deep equal `_.isEqual()`
 
+## Question
 [\_.isEqual](https://lodash.com/docs/4.17.15#isEqual) is useful when you want to compare complex data types by value not the reference.
 
 Can you implement your own version of deep equal `isEqual`? The lodash version covers a lot of data types. In this problem, you are asked to support :
@@ -64,7 +65,26 @@ _.isEqual(d, e) // true
 
 Setting aside the performance concerns mentioned by lodash, **your implement should not have above problem**, which means above all returns **true** and call stack should not exceed the maximum.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {any} a
+ * @param {any} b
+ * @return {boolean}
+ */
+function isEqual(a, b) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-deep-equal-isEqual)
 
   

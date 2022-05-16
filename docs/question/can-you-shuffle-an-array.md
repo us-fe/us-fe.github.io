@@ -8,6 +8,7 @@ tag:
   
 # can you shuffle() an array?
 
+## Question
 How would you implement a shuffle() ?
 
 When passed with an array, it should modify the array inline to generate a randomly picked permutation at the same probability.
@@ -55,7 +56,32 @@ Your `shuffle()` will be called multiple times, to calculate the probability on 
 
 ref: [https://javascript.info/task/shuffle](https://javascript.info/task/shuffle)
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {any[]} arr
+ * @returns {void}
+ */
+function shuffle(arr) {
+  // modify the arr inline to change the order randomly
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+function shuffle(arr: any[]): void {
+  // modify the arr inline to change the order randomly
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/can-you-shuffle-an-array)
 
   

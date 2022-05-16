@@ -9,6 +9,7 @@ tag:
   
 # implement throttle() with leading & trailing option
 
+## Question
 This is a follow up on [4\. implement basic throttle()](/problem/implement-basic-throttle), please refer to it for detailed explanation.
 
 In this problem, you are asked to implement a enhanced `throttle()` which accepts third parameter, `option: {leading: boolean, trailing: boolean}`
@@ -69,7 +70,44 @@ const run = (input) => {
 expect(run(['A@0', 'B@2', 'C@3'])).toEqual(['A@0', 'C@3'])
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {(...args: any[]) => any} func
+ * @param {number} wait
+ * @param {boolean} option.leading
+ * @param {boolean} option.trailing
+ * @returns {(...args: any[]) => any}
+ */
+function throttle(func, wait, option = {leading: true, trailing: true}) {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+function throttle<T extends (...args: any[]) => any>(
+  func: T, 
+  wait: number, 
+  option: {leading: boolean, trailing: boolean } = {leading: true, trailing: true}
+  ): T {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+## Related
+
++ [implement basic throttle()](./implement-basic-throttle)
++ [implement basic debounce()](./implement-basic-debounce)
++ [implement debounce() with leading & trailing option](./implement-debounce-with-leading-and-trailing-option)
++ [throttle Promises](./throttle-Promises)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-throttle-with-leading-and-trailing-option)
 
   

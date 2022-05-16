@@ -9,6 +9,7 @@ tag:
   
 # Generate Fibonacci Number
 
+## Question
 ```js
 0
 1
@@ -31,7 +32,27 @@ You are asked to create a `fib(n)` function, which generate the n-th Fibonacci n
 
 What is the time & space cost of your solution?
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {number} n - non-negative integer
+ * @return {number}
+ */
+function fib(n) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+## Related
+
++ [Generate Fibonacci Number with recursion](./Generate-Fibonacci-Number-with-recursion)
+##  Source
 [Source From](https://bigfrontend.dev/problem/fibonacci-number)
 
   

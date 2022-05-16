@@ -8,6 +8,7 @@ tag:
   
 # Generate CSS Selector for target element
 
+## Question
 Given a DOM tree and a target element, generate a valid selector to target it.
 
 For example, for a DOM tree like below
@@ -34,7 +35,33 @@ selector = generateSelector(root, target) // 'div > div > p > button'
 expect(root.querySelector(selector)).toBe(target)
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {HTMLElement} root
+ * @param {HTMLElement} target
+ * @return {string}
+ */
+function generateSelector(root, target) {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+function generateSelector(root: HTMLElement, target: HTMLElement): string {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/generate-selector)
 
   

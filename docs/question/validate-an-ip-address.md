@@ -8,6 +8,7 @@ tag:
   
 # validate an IP address
 
+## Question
 IPv4
 ----
 
@@ -33,7 +34,25 @@ You are given some random string, please write a function if it is valid IPv4 or
 
 Can you solve it with regular expressions ?
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} str
+ * @return {boolean}
+ */
+function isValidIP(str) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/validate-an-ip-address)
 
   

@@ -6,6 +6,7 @@ tag:
   
 # Design a Typeahead Widget
 
+## Question
 We see Typeahead everywhere, either in Google Search or Twitter Search, when we type something, a suggestion layer gives us the possible result we want.
 
 You are asked to design a Typeahead widget.
@@ -21,6 +22,9 @@ Your are supposed to mainly talk about FrontEnd, but knowing the server side doe
 [https://www.youtube.com/watch?v=us0qySiUsGU](https://www.youtube.com/watch?v=us0qySiUsGU)
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/design/Design-a-Typeahead-Widget)
 
   

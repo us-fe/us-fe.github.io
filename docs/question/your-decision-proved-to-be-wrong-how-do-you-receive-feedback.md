@@ -7,6 +7,7 @@ tag:
   
 # Your decision proved to be wrong, how do you receive feedback?
 
+## Question
 Everyone makes mistakes. Just don't make same mistake twice.
 
 Be modest, Be objective and don't take it personal when receiving feedback.
@@ -16,6 +17,9 @@ Prepare for this with **a solid real case** to show your **unique value**, use a
 When speaking, follow this template: situation → obstacles → actions → result
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/question/Your-decision-proved-to-be-wrong-how-do-you-receive-feedback)
 
   

@@ -8,6 +8,7 @@ tag:
   
 # call APIs with pagination
 
+## Question
 Have you ever met some APIs with pagination, and needed to recursively fetch them based on response of previous request ?
 
 Suppose we have a `/list` API, which returns an array `items`.
@@ -34,7 +35,27 @@ _note_
 
 You can achieve this by regular loop, even fancier solutions with [async iterators or async generators](https://javascript.info/async-iterators-generator). You should try them all.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+// fetchList is provided for you
+// const fetchList = (since?: number) => 
+//   Promise<{items: Array<{id: number}>}>
 
+
+// you can change this to generator function if you want
+const fetchListWithAmount = async (amount = 5) => {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/call-APIs-with-pagination)
 
   

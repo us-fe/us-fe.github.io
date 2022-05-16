@@ -10,6 +10,7 @@ tag:
   
 # merge sorted arrays
 
+## Question
 You are given a list of sorted non-descending integer arrays, write a function to merge them into one sorted non-descending array.
 
 ```js
@@ -26,7 +27,26 @@ merge(
 
 What is time complexity of your solution?
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {number[][]} arrList
+ * non-descending integer array
+ * @return {number[]} 
+ */
+function merge(arrList) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/merge-sorted-arrays)
 
   

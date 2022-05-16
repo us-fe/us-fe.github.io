@@ -9,6 +9,7 @@ tag:
   
 # BigDecimal subtraction
 
+## Question
 > This is a follow-up on [126\. BigDecimal addition](https://bigfrontend.dev/problem/decimal-addition)
 
 In this problem, you are asked to **implement the subtraction of two decimals with arbitrary digits**.
@@ -32,7 +33,28 @@ subtract(
 1.  This problem covers [77\. implement BigInt subtraction with sign](https://bigfrontend.dev/problem/implement-BigInt-subtraction-with-sign).
 2.  trailing zeroes in the result should be removed.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} num1
+ * @param {string} num2
+ * @return {string}
+ */
+function subtract(num1, num2) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+## Related
+
++ [BigDecimal addition](./decimal-addition)
+##  Source
 [Source From](https://bigfrontend.dev/problem/bigdecimal-subtraction)
 
   

@@ -9,6 +9,7 @@ tag:
   
 # LRU - Chrome storage automatic eviction
 
+## Question
 Chrome uses LRU algorithm to evict data when it has to.
 
 Wactch [this Youtube video](https://youtu.be/NNuTV-gjlZQ?t=387) for detail explanation, starting from 6:25 to 7:38.
@@ -50,7 +51,97 @@ interface LRUStorage {
 }
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @typedef {object} OriginData
+ * @property {string} origin
+ * @property {number} lastUsed
+ * @property {number} size
+ * @property {boolean} persistent
+ */
 
+class MyLRUStorage  {
+  /**
+   * @param {number} capacity
+   * @param {() => number} getTimestamp
+   */
+  constructor(capacity, getTimestamp) {
+    this.capacity = capacity
+    this.getTimestamp = getTimestamp
+  }
+
+  /**
+   * @param {string} origin
+   * @returns {OriginData | undefined}
+   */
+  getData(origin) {
+
+  }
+
+  /**
+   * @param {string} origin
+   * @param {number} size
+   * @returns {boolean}
+   */
+  setData(origin, size) {
+
+  }
+
+  /**
+   * @param {string} origin
+   * @returns {void}
+   */
+  clearData(origin) {
+
+  }
+
+  /**
+   * @param {string} origin
+   * @returns {void}
+   */
+  makePersistent(origin) {
+
+  }
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+interface OriginData {
+  origin: string
+  lastUsed: number
+  size: number
+  persistent: boolean
+}
+
+interface LRUStorage {
+  capacity: number
+  getData(origin: string): OriginData | undefined
+  setData(origin: string, size: number): boolean
+  clearData(origin: string): void
+  makePersistent(origin: string): void 
+}
+
+class MyLRUStorage implements LRUStorage {
+  capacity: number
+  getTimestamp: () => void
+  constructor(capacity: number, getTimestamp: () => void) {
+    this.capacity = capacity
+    this.getTimestamp = getTimestamp
+  }
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/lru-chrome-storage-eviction)
 
   

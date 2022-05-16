@@ -9,6 +9,7 @@ tag:
   
 # implement debounce() with leading & trailing option
 
+## Question
 This is a follow up on [6\. implement basic debounce()](/problem/implement-basic-debounce), please refer to it for detailed explanation.
 
 In this problem, you are asked to implement an enhanced `debounce()` which accepts third parameter, `option: {leading: boolean, trailing: boolean}`
@@ -67,7 +68,43 @@ const run = (input) => {
 expect(run(['A@0', 'B@2', 'C@3'])).toEqual(['C@6'])
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {(...args: any[]) => any} func
+ * @param {number} wait
+ * @param {boolean} option.leading
+ * @param {boolean} option.trailing
+ * @returns {(...args: any[]) => any}
+ */
+function debounce(func, wait, option = {leading: false, trailing: true}) {
+  // your code here
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+function debounce<T extends (...args: any[]) => any>(
+  func: T, 
+  wait: number, 
+  option: {leading: boolean, trailing: boolean} = {leading: false, trailing: true}
+  ): T {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+## Related
+
++ [implement basic throttle()](./implement-basic-throttle)
++ [implement throttle() with leading & trailing option](./implement-throttle-with-leading-and-trailing-option)
++ [implement basic debounce()](./implement-basic-debounce)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-debounce-with-leading-and-trailing-option)
 
   

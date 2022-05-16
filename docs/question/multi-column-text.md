@@ -7,6 +7,7 @@ tag:
   
 # multi-column text
 
+## Question
 It is very common to see text in multiple columns on newspaper, please achieve something similar in this problem.
 
 Suppose you have HTML structure like below.
@@ -26,6 +27,9 @@ Complete the CSS code according to following requirements
 > The text used in test doesn't contain space but has forced line break to show padding/margin clearly.
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/css/multi-column-text)
 
   

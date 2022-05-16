@@ -8,6 +8,7 @@ tag:
   
 # implement `jest.spyOn()`
 
+## Question
 If you did unit test before, you must be familiar with `Spy`.
 
 You are asked to create a `spyOn(object, methodName)`, which works the same as [jest.spyOn()](https://jestjs.io/docs/en/jest-object#jestspyonobject-methodname).
@@ -41,7 +42,25 @@ console.log(spy.calls)
 // [ [1], [2] ]
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {object} obj
+ * @param {string} methodName
+ */
+function spyOn(obj, methodName) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-spyOn)
 
   

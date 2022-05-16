@@ -8,6 +8,7 @@ tag:
   
 # create a browser history
 
+## Question
 I believe you are very familiar about your browser you are currently visiting [https://bigfrontend.dev](https://bigfrontend.dev) with.
 
 The common actions relating to history are:
@@ -53,7 +54,52 @@ Now if we visit a new url D, since we are currently at B, C is truncated.
 
 You are asked to implement a `BrowserHistory` class to mimic the behavior.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+class BrowserHistory {
+  
+  /**
+   * @param {string} url
+   * if url is set, it means new tab with url
+   * otherwise, it is empty new tab
+   */
+  constructor(url) {
 
+  }
+  /**
+   * @param { string } url
+   */
+  visit(url) {
+
+  }
+  
+  /**
+   * @return {string} current url
+   */
+  get current() {
+
+  }
+  
+  // go to previous entry
+  goBack() {
+
+  }
+  
+  // go to next visited url
+  forward() {
+
+  }
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-a-browser-history)
 
   

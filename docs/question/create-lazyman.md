@@ -8,6 +8,7 @@ tag:
   
 # create LazyMan()
 
+## Question
 `LazyMan` is very lazy, he only eats and sleeps.
 
 `LazyMan(name: string, logFn: (log: string) => void)` would output a message, the passed `logFn` is used.
@@ -54,7 +55,32 @@ LazyMan('Jack', console.log).eat('banana').sleepFirst(10).eat('apple').sleep(1)
 
 Please create such `LazyMan()`
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+// interface Laziness {
+//   sleep: (time: number) => Laziness
+//   sleepFirst: (time: number) => Laziness
+//   eat: (food: string) => Laziness
+// }
 
+/**
+ * @param {string} name
+ * @param {(log: string) => void} logFn
+ * @returns {Laziness}
+ */
+function LazyMan(name, logFn) {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-lazyman)
 
   

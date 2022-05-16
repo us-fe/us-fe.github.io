@@ -7,6 +7,7 @@ tag:
   
 # How HTTP works ? What is HTTP/2?
 
+## Question
 As FrontEnd engineers, we'd better understand how HTTP works.
 
 In case you are not familiar, here are some materials
@@ -20,6 +21,9 @@ In case you are not familiar, here are some materials
 HTTP/2 helps with the performance improvement of resource loading. It could be a shining point if you can integrate this in your answers on general questions on performance tuning.
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/question/how-http-works-http1.1-vs-http2)
 
   

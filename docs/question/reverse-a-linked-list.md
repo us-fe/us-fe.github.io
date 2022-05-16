@@ -9,6 +9,7 @@ tag:
   
 # reverse a linked list
 
+## Question
 Another basic algorithm even for Front End developers.
 
 You are asked to **reverse a linked list**.
@@ -40,7 +41,33 @@ _Follow up_
 
 Could you solve it with and without recursion?
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/** 
+ * class Node {
+ *  new(val: number, next: Node);
+ *    val: number
+ *    next: Node
+ * }
+ */
 
+/**
+ * @param {Node} list
+ * @return {Node} 
+ */
+const reverseLinkedList = (list) => {
+    // your code
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/Reverse-a-linked-list)
 
   

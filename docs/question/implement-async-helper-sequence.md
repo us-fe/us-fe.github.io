@@ -8,6 +8,7 @@ tag:
   
 # implement async helper - `sequence()`
 
+## Question
 This problem is similar to [11\. what is Composition? create a pipe()](https://bigfrontend.dev/problem/what-is-composition-create-a-pipe).
 
 You are asked to implement an async function helper, `sequence()` which chains up async functions, like what `pipe()` does.
@@ -54,7 +55,39 @@ Once an error occurs, it should trigger the last callback without triggering the
 
 Can you solve it with and without Promise?
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/*
+type Callback = (error: Error, data: any) => void
 
+type AsyncFunc = (
+   callback: Callback,
+   data: any
+) => void
+
+*/
+
+/**
+ * @param {AsyncFunc[]} funcs
+ * @return {(callback: Callback) => void}
+ */
+function sequence(funcs){
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+## Related
+
++ [what is Composition? create a pipe()](./what-is-composition-create-a-pipe)
++ [implement async helper - `parallel()`](./implement-async-helper-parallel)
++ [implement async helper - `race()`](./implement-async-helper-race)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-async-helper-sequence)
 
   

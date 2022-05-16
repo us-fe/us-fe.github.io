@@ -8,6 +8,7 @@ tag:
   
 # create callback on message channel
 
+## Question
 We have `SomeChannel` which allows us to send messages between 2 ports.
 
 ```js
@@ -44,7 +45,52 @@ port1.postMessage('ping?', (data) => {
 2.  internally `SomeChannel` must be used.
 3.  though there might be delays, messages are guaranteed to be delivered through `SomeChannel`, but it is worthy for you to think about the case in which messages might be dropped.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+// interface SomePort {
+//   postMessage: (message: string) => void
+//   onmessage?: (message: string) => void
+// }
 
+// declare class SomeChannel {
+//   port1: SomePort
+//   port2: SomePort
+// }
+
+class BetterChannel {
+  constructor() {
+    const {port1, port2} = new SomeChannel()
+  }
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+interface SomePort {
+  postMessage: (message: string) => void
+  onmessage?: (message: string) => void
+}
+
+declare class SomeChannel {
+  port1: SomePort
+  port2: SomePort
+}
+
+class BetterChannel {
+  constructor() {
+    const {port1, port2} = new SomeChannel()
+  }
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/some-message-channel)
 
   

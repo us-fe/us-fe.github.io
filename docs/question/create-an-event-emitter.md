@@ -8,6 +8,7 @@ tag:
   
 # create an Event Emitter
 
+## Question
 There is [Event Emitter in Node.js](https://nodejs.org/api/events.html#events_class_eventemitter), Facebook once had [its own implementation](https://github.com/facebookarchive/emitter) but now it is archived.
 
 You are asked to create an Event Emitter Class
@@ -43,7 +44,28 @@ sub3.release()
 // callback1 is not called anymore
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+// please complete the implementation
+class EventEmitter {
+  subscribe(eventName, callback) {
+  	
+  }
+  
+  emit(eventName, ...args) {
+  	
+  }
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-an-Event-Emitter)
 
   

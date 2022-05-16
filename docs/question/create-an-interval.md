@@ -9,6 +9,7 @@ tag:
   
 # create an interval
 
+## Question
 You are asked to create a new `mySetInterval(a, b)` which has a different behavior from `window.setInterval`, the time between calls is a linear function, growing larger and larger `period = a + b * count`.
 
 ```js
@@ -71,7 +72,34 @@ expect(run(100, 200, 450)).toEqual([100,400])
 expect(run(100, 200, 50)).toEqual([])
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {Function} func
+ * @param {number} delay
+ * @param {number} period
+ * @return {number}
+ */
+function mySetInterval(func, delay, period) {
+  // your code here
+}
 
+/**
+ * @param { number } id
+ */
+function myClearInterval(id) {
+  
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-an-interval)
 
   

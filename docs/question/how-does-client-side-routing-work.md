@@ -7,6 +7,7 @@ tag:
   
 # How does client-side routing work?
 
+## Question
 If you have used react-router before, you must know there are 3 kinds of router,
 
 1.  BrowserRouter
@@ -22,6 +23,9 @@ To best understand this, you are suggested to write your own client-side router,
 2.  [onhashchange](https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onhashchange)
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/question/How-does-client-side-routing-work)
 
   

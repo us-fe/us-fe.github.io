@@ -7,6 +7,7 @@ tag:
   
 # Tell me a time you handled conflict.
 
+## Question
 People have different opinions on same thing, that's for sure.
 
 When facing conflicts, you'd better **see the whole picture**, sometimes it is good to persuade others, sometimes it is not, depends on the situation.
@@ -16,6 +17,9 @@ Tell the interviewer your general rule, and prepare for this with **a solid real
 When speaking, follow this template: situation → obstacles → actions → result
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/question/Tell-me-a-time-you-handled-conflict)
 
   

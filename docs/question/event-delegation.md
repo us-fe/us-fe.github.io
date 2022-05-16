@@ -8,6 +8,7 @@ tag:
   
 # event delegation
 
+## Question
 [What is Event Delegation?](https://bigfrontend.dev/question/What-is-Event-Delegation)
 
 Can you create a function which works like [jQuery.on()](https://api.jquery.com/on/), that attaches event listeners to selected elements.
@@ -31,7 +32,26 @@ onClick(
     
 2.  you should only attach one real event listener to the root element.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {HTMLElement} root
+ * @param {(el: HTMLElement) => boolean} predicate
+ * @param {(e: Event) => void} handler
+ */
+function onClick(root, predicate, handler) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/event-delegation)
 
   

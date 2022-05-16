@@ -8,6 +8,7 @@ tag:
   
 # implement BigInt division
 
+## Question
 This is a follow-up on [114\. implement BigInt multiplication](https://bigfrontend.dev/problem/implement-BigInt-multiplication).
 
 You are asked to create a BigInt division function.
@@ -42,7 +43,26 @@ divide(
 // '-1'
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} a
+ * @param {string} b
+ * @return {string}
+ */
+function divide(a, b) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-BigInt-division)
 
   

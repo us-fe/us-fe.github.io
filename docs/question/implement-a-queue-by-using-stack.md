@@ -10,6 +10,7 @@ tag:
   
 # Implement a Queue by using Stack
 
+## Question
 In JavaScript, we could use array to work as both a Stack or a queue.
 
 ```js
@@ -54,7 +55,77 @@ _note_
 
 you can only use Stack as provided, Array should be avoided for the purpose of practicing.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/* you can use this Class which is bundled together with your code
 
+class Stack {
+  push(element) { // add element to stack }
+  peek() { // get the top element }
+  pop() { // remove the top element}
+  size() { // count of element }
+}
+*/
+
+/* Array is disabled in your code */
+
+// you need to complete the following Class
+class Queue {
+  enqueue(element) { 
+    // add new element to the rare
+  }
+  peek() { 
+    // get the head element
+  }
+  size() { 
+    // return count of element
+  }
+  dequeue() {
+    // remove the head element
+  }
+}
+```
+:::
+    ::: code-group-item typescript
+```typescript
+/* you can use this Class which is bundled together with your code */
+
+declare class Stack {
+  push(element: any): void
+  peek(): any
+  pop(): any
+  size(): number
+}
+
+/* Array is disabled in your code */
+
+// you need to complete the following Class
+class Queue {
+  enqueue(element: any) { 
+    // add new element to the rare
+  }
+  peek() { 
+    // get the head element
+  }
+  size() { 
+    // return count of element
+  }
+  dequeue() {
+    // remove the head element
+  }
+}
+```
+:::
+    
+::::
+
+
+## Related
+
++ [Implement a Stack by using Queue](./Implement-a-Stack-by-using-Queue)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-a-queue-by-using-stack)
 
   

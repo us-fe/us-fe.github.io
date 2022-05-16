@@ -5,8 +5,9 @@ tag:
 
 ---
   
-# color gradients on text 
+# color gradients on text
 
+## Question
 Let's give text some color gradients, from `red` on the left to `yellow` on the right.
 
 ```html
@@ -14,6 +15,9 @@ Let's give text some color gradients, from `red` on the left to `yellow` on the 
 ```
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/css/gradient-text)
 
   

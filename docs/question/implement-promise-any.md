@@ -8,6 +8,7 @@ tag:
   
 # implement `Promise.any()`
 
+## Question
 > Promise.any() takes an iterable of Promise objects and, as soon as one of the promises in the iterable fulfils, returns a single promise that resolves with the value from that promise
 
 *   from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any)
@@ -25,7 +26,29 @@ new AggregateError(
 )
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {Array<Promise>} promises
+ * @return {Promise}
+ */
+function any(promises) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+## Related
+
++ [implement `Promise.all()`](./implement-Promise-all)
++ [implement `Promise.allSettled()`](./implement-Promise-allSettled)
++ [implement `Promise.race()`](./implement-Promise-race)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-Promise-any)
 
   

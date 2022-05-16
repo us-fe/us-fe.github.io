@@ -7,6 +7,7 @@ tag:
   
 # color of input elements
 
+## Question
 We have a slider but we want to change the default color into `#F44336`.
 
 ```html
@@ -14,6 +15,9 @@ We have a slider but we want to change the default color into `#F44336`.
 ```
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/css/change-color-of-input-elements)
 
   

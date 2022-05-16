@@ -6,6 +6,7 @@ tag:
   
 # Design a Carousel Widget
 
+## Question
 Carousel component is everywhere, how can you implement one ?
 
 1.  implementation overall picture (JavaScript/HTML/CSS .etc)
@@ -17,6 +18,9 @@ Carousel component is everywhere, how can you implement one ?
 7.  lazyload
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/design/Design-a-Carousel-Widget)
 
   

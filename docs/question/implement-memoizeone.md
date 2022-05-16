@@ -8,6 +8,7 @@ tag:
   
 # implement memoizeOne()
 
+## Question
 In problem [14\. Implement a general memoization function](https://bigfrontend.dev/problem/implement-general-memoization-function), you are asked to implement a memo function without space concern.
 
 But in reality, it could be a problem if cache bloats.
@@ -21,7 +22,29 @@ Please implement your own `memoizeOne()`, it takes 2 arguments
 
 Default equality check function should be a shallow comparison on array items with strict equal `===`.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {Function} func
+ * @param {(args: any[], newArgs: any[]) => boolean} [isEqual]
+ * @returns {any}
+ */
 
+function memoizeOne(func, isEqual) {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+## Related
+
++ [Implement a general memoization function - `memo()`](./implement-general-memoization-function)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-memoizeOne)
 
   

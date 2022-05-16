@@ -8,6 +8,7 @@ tag:
   
 # Virtual DOM II - createElement
 
+## Question
 > This is a follow-up on [113\. Virtual DOM I](https://bigfrontend.dev/problem/Virtual-DOM-I).
 
 Suppose you have solved above problem, now let's take a look at [React.createElement()](https://reactjs.org/docs/react-api.html#createelement):
@@ -53,7 +54,47 @@ render(h(
     
 2.  Details about ref, key are ignored here, they will be put in other problems. Re-render is not covered here, it will be in another problem as well.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * MyElement is the type your implementation supports
+ *
+ * type MyNode = MyElement | string
+ */
 
+/**
+ * @param { string } type - valid HTML tag name
+ * @param { object } [props] - properties.
+ * @param { ...MyNode} [children] - elements as rest arguments
+ * @return { MyElement }
+ */
+function createElement(type, props, ...children) {
+  // your code here
+}
+
+
+/**
+ * @param { MyElement }
+ * @returns { HTMLElement } 
+ */
+function render(myElement) {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+## Related
+
++ [Virtual DOM I](./Virtual-DOM-I)
++ [Virtual DOM III - Functional Component](./virtual-DOM-III-Functional-Component)
++ [Virtual DOM IV - JSX 1](./virtual-dom-iv-jsx-1)
++ [Virtual DOM V - JSX 2](./virtual-dom-v-jsx-2)
+##  Source
 [Source From](https://bigfrontend.dev/problem/virtual-dom-II-createElement)
 
   

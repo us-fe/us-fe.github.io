@@ -9,6 +9,7 @@ tag:
   
 # BigDecimal Division
 
+## Question
 > This is a follow-up on [126\. BigDecimal addition](https://bigfrontend.dev/problem/decimal-addition)
 
 In this problem, you are asked to **implement the division of two decimals with arbitrary digits**.
@@ -31,7 +32,26 @@ divide(
 2.  trailing zeroes in the result should be removed.
 3.  return the result with **max 20 digit fraction part**, rest be truncated.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {string} a
+ * @param {string} b
+ * @return {string}
+ */
+function divide(a, b) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/bigdecimal-division)
 
   

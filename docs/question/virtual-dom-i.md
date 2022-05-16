@@ -10,6 +10,7 @@ tag:
   
 # Virtual DOM I
 
+## Question
 Suppose you have solved [110\. serialize and deserialize binary tree](https://bigfrontend.dev/problem/serialize-and-deserialize-binary-tree), have you wondered how to do similar task to DOM tree ?
 
 HTML string could be thought as some sort of [serialization](https://en.wikipedia.org/wiki/Serialization), the browser parses(deserialize) the HTML → construct the DOM tree.
@@ -91,7 +92,39 @@ You should support:
 
 `virtualize()` takes in a real DOM tree and create an object literal `render()` takes in a object literal presentation and recreate a DOM tree.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {HTMLElement} 
+ * @return {object} object literal presentation
+ */
+function virtualize(element) {
+  // your code here
+}
 
+
+/**
+ * @param {object} valid object literal presentation
+ * @return {HTMLElement} 
+ */
+function render(obj) {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+## Related
+
++ [Virtual DOM II - createElement](./virtual-dom-II-createElement)
++ [Virtual DOM III - Functional Component](./virtual-DOM-III-Functional-Component)
++ [Virtual DOM IV - JSX 1](./virtual-dom-iv-jsx-1)
++ [Virtual DOM V - JSX 2](./virtual-dom-v-jsx-2)
+##  Source
 [Source From](https://bigfrontend.dev/problem/Virtual-DOM-I)
 
   

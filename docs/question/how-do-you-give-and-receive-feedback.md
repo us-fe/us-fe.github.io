@@ -7,6 +7,7 @@ tag:
   
 # How do you give and receive feedback?
 
+## Question
 It is not all happiness in your daily work, not everybody is your friend, but you need to **Be objective** when giving feedback and also when receiving them.
 
 And there are multiple ways to give feedback, in the company review system, talk privately , talk in public, or talk to his/her boss, .etc. Which is the best depends on the situation and your relationship.
@@ -16,6 +17,9 @@ Prepare for this with **a solid real case** to show your **unique value**, use a
 When speaking, follow this template: situation → obstacles → actions → result
 
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/question/How-do-you-give-and-receive-feedback)
 
   

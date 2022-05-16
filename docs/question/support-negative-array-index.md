@@ -8,6 +8,7 @@ tag:
   
 # support negative Array index in JavaScript
 
+## Question
 Python supports negative list index , while JavaScript doesn't.
 
 Can you write a wrapper function to make **negative array index** possible?
@@ -49,7 +50,25 @@ arr // [2,3,6]
 originalArr // [2,3,6]
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {any[]} arr
+ * @returns {?} - sorry no type hint for this
+ */
+function wrap(arr) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/support-negative-Array-index)
 
   

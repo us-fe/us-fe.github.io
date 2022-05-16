@@ -9,6 +9,7 @@ tag:
   
 # lit-html 1 - tagged templates
 
+## Question
 According to [lit-html homepage](https://lit-html.polymer-project.org/),
 
 > lit-html lets you write HTML templates in JavaScript, then efficiently render and re-render those templates together with data to create and update DOM
@@ -34,7 +35,27 @@ But there will be a series of problems on BFE.dev leading to that, here you are 
 
 The input data are all valid.
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+function html(/** your code here **/) {
+  // your code here
+}
 
+
+// render the result from html() into the container
+function render(result, container) {
+  // your code here
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/lit-html-1-tagged-templates)
 
   

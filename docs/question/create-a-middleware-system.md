@@ -8,6 +8,7 @@ tag:
   
 # create a middleware system
 
+## Question
 Have you ever used [Express Middleware](http://expressjs.com/en/guide/using-middleware.html#using-middleware) before?
 
 Middleware functions are functions with fixed interface that could be chained up like following two functions.
@@ -103,7 +104,33 @@ middleware.start({})
 // {a: 1}
 ```
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+class Middleware {
+  /**
+   * @param {MiddlewareFunc} func
+   */
+  use(func) {
+    
+  }
 
+  /**
+   * @param {Request} req
+   */
+  start(req) {
+    
+  }
+}
+```
+:::
+    
+::::
+
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/create-a-middleware-system)
 
   

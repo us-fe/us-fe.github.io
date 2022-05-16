@@ -6,8 +6,9 @@ tag:
 
 ---
   
-# implement completeAssign() 
+# implement completeAssign()
 
+## Question
 This is a follow-up on [26\. implement Object.assign()](https://bigfrontend.dev/problem/implement-object-assign).
 
 `Object.assign()` assigns the enumerable properties, so getters are not copied, non-enumerable properties are ignored.
@@ -66,7 +67,23 @@ This problem is solely checking your understanding of how property descriptors w
 
 Good luck
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+function completeAssign(target, ...sources) {
+  // your code here
+}
+```
+:::
+    
+::::
 
+
+## Related
+
++ [implement Object.assign()](./implement-object-assign)
+##  Source
 [Source From](https://bigfrontend.dev/problem/implement-completeAssign)
 
   

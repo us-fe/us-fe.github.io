@@ -9,6 +9,7 @@ tag:
   
 # Reorder array with new indexes
 
+## Question
 Suppose we have an array of items - `A`, and another array of indexes in numbers - `B`
 
 ```js
@@ -30,7 +31,26 @@ _follow-up_
 
 It is fairly easy to do this by using extra `O(n)` space, could you solve it with `O(1)` space?
 
+## Code
+:::: code-group
+::: code-group-item javascript:active
+```javascript
+/**
+ * @param {any[]} items
+ * @param {number[]} newOrder
+ * @return {void}
+ */
+function sort(items, newOrder) {
+  // reorder items inline
+}
+```
+:::
+    
+::::
 
+
+
+##  Source
 [Source From](https://bigfrontend.dev/problem/reorder-array-with-new-indexes)
 
   
