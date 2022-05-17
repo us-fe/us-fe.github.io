@@ -1,6 +1,7 @@
 {
  "text": "React Quiz",
  "collapsible": true,
+ "collapsable": true,
  "children": [
   "/question/react-re-render-1",
   "/question/react-re-render-2",

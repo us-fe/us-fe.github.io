@@ -3,7 +3,7 @@ tag:
   - Coding
   - JavaScript
   - DOM
-  - medium
+  - Medium
 
 ---
   

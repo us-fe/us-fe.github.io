@@ -4,7 +4,7 @@ tag:
   - JavaScript
   - DOM
   - Microsoft
-  - easy
+  - Easy
 
 ---
   

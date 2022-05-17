@@ -1,6 +1,7 @@
 {
  "text": "Coding Problem",
  "collapsible": true,
+ "collapsable": true,
  "children": [
   "/question/implement-curry",
   "/question/implement-curry-with-placeholder",

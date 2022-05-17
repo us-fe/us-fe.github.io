@@ -3,7 +3,7 @@ tag:
   - Coding
   - JavaScript
   - Algorithm
-  - few challengers
+  - Few challengers
 
 ---
   

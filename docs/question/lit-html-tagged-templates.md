@@ -2,8 +2,8 @@
 tag:
   - Coding
   - JavaScript
-  - lit-html
-  - easy
+  - Lit-html
+  - Easy
 
 ---
   

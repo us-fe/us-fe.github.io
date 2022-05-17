@@ -1,6 +1,7 @@
 {
  "text": "JavaScript Quiz",
  "collapsible": true,
+ "collapsable": true,
  "children": [
   "/question/promise-order",
   "/question/promise-executor",

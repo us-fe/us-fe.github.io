@@ -4,7 +4,7 @@ tag:
   - JavaScript
   - Algorithm
   - ByteDance
-  - easy
+  - Easy
 
 ---
   

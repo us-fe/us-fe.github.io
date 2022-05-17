@@ -1,6 +1,7 @@
 {
  "text": "CSS",
  "collapsible": true,
+ "collapsable": true,
  "children": [
   "/question/center-an-element-vertically",
   "/question/truncate-text-with-ellipsis-in-one-line",

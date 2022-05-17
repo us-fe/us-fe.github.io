@@ -3,7 +3,7 @@ tag:
   - Coding
   - JavaScript
   - Algorithm
-  - easy
+  - Easy
 
 ---
   

@@ -4,7 +4,7 @@ tag:
   - JavaScript
   - Algorithm
   - Lodash
-  - medium
+  - Medium
 
 ---
   

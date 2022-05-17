@@ -1,6 +1,7 @@
 {
  "text": "System Design",
  "collapsible": true,
+ "collapsable": true,
  "children": [
   "/question/design-facebook-web-app",
   "/question/design-an-instagram",

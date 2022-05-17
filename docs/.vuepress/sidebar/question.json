@@ -1,6 +1,7 @@
 {
  "text": "Question",
  "collapsible": true,
+ "collapsable": true,
  "children": [
   "/question/what-are-the-time-and-space-complexity-for-main-sorting-algorithms",
   "/question/what-is-prototypal-inheritance-how-does-it-work",

@@ -63,6 +63,11 @@ const navbar: HopeThemeNavbarConfig = [
   },
 
   {
+    text: "标签",
+    link: "/tag/",
+  },
+
+  {
     text: "博客",
     link: "/blog/how-to-contribute",
   },

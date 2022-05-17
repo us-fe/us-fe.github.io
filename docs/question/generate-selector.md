@@ -2,7 +2,7 @@
 tag:
   - Coding
   - JavaScript
-  - medium
+  - Medium
 
 ---
   

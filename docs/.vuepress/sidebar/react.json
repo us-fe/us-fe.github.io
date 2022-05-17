@@ -1,6 +1,7 @@
 {
  "text": "React",
  "collapsible": true,
+ "collapsable": true,
  "children": [
   "/question/the-react-counter",
   "/question/usetimeout",

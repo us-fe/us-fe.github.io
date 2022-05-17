@@ -3,7 +3,7 @@ tag:
   - Coding
   - JavaScript
   - Apple
-  - easy
+  - Easy
 
 ---
   

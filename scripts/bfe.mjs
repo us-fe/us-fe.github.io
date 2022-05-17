@@ -96,12 +96,13 @@ async function getQuestionList(url, tags) {
     var href = $aTag.attr("href");
 
     var qTags = [...tags];
+
     $(this)
       .find(".Tag-sc-172abfj-0")
       .each((i, item) => {
         var tag = $(item).text();
         if (!qTags.includes(tag)) {
-          qTags.push(tag);
+          qTags.push(getTag(tag));
         }
       });
 
@@ -121,6 +122,11 @@ async function getQuestionList(url, tags) {
   return list;
 }
 
+function getTag(tag) {
+  let newTag = tag.replace(/\?$/, "").trim();
+  newTag = newTag[0].toUpperCase() + newTag.substr(1);
+  return newTag;
+}
 function getPath(path) {
   const newPath = path.replace(/\d+-/, "").toLocaleLowerCase().trim();
   if (!newPath) {
@@ -283,6 +289,7 @@ async function writeSidebar(list, text, filename) {
   const json = {
     text: text,
     collapsible: true,
+    collapsable: true,
     children: list.map((t) => {
       return `/question/${t.path}`;
     }),
