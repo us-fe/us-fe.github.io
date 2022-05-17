@@ -1,0 +1,1 @@
+const e={key:"v-3cfa349b",path:"/tag/webapi/",title:"WebAPI \u6807\u7B7E",lang:"zh-CN",frontmatter:{title:"WebAPI \u6807\u7B7E",blog:{type:"category",name:"WebAPI",key:"tag"},layout:"Blog"},excerpt:"",headers:[],git:{},readingTime:{minutes:0,words:0},copyright:"\u8457\u4F5C\u6743\u5F52\u6240\u6709",filePathRelative:null};export{e as data};

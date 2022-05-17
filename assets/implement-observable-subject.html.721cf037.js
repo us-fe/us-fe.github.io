@@ -1,0 +1,43 @@
+import{_ as r}from"./plugin-vue_export-helper.21dcd24c.js";import{r as t,c as p,a as n,b as e,w as o,F as u,d as s,e as c,o as d}from"./app.22a70bca.js";const b={},m=n("h1",{id:"implement-observable-subject",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#implement-observable-subject","aria-hidden":"true"},"#"),s(" implement Observable Subject")],-1),v=n("h2",{id:"question",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#question","aria-hidden":"true"},"#"),s(" Question")],-1),k=s("This is a follow-up on "),h={href:"https://bigfrontend.dev/problem/create-an-Observable",target:"_blank",rel:"noopener noreferrer"},_=s("57. create an Observable"),f=s("."),g=s("Plain Observables are unicast, meaning every subscription is independent. To create multicast, you need to use "),j={href:"https://rxjs-dev.firebaseapp.com/guide/subject",target:"_blank",rel:"noopener noreferrer"},w=s("Subject"),x=s("."),O=c(`<p>Following code is easier to understand.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// default behavior with plain Observable</span>
+<span class="token keyword">const</span> observable <span class="token operator">=</span> <span class="token function">from</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+observable<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>console<span class="token punctuation">.</span>log<span class="token punctuation">)</span>
+observable<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>console<span class="token punctuation">.</span>log<span class="token punctuation">)</span>
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>You can see that two subscriptions are independent so the logs are grouped by subscription.</p><p>with Subject, it works like Event Listeners in DOM world.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> subject <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Subject</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+subject<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>console<span class="token punctuation">.</span>log<span class="token punctuation">)</span>
+subject<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>console<span class="token punctuation">.</span>log<span class="token punctuation">)</span>
+ 
+<span class="token keyword">const</span> observable <span class="token operator">=</span> <span class="token function">from</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+observable<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>subject<span class="token punctuation">)</span>
+
+<span class="token comment">// 1</span>
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+<span class="token comment">// 3</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Now the logs are different! That is because Subject first works as a observer, get the values, then works as an Observable and dispatch the value to different observers.</p><p>Cool right? Ok, you are asked to <strong>implement a simple <code>Subject Class</code></strong>.</p><ol><li><code>Observable</code> is given for you, you can just use it.</li><li>you can use <code>new Observer({next,error,complete})</code> or <code>new Observer(function)</code> to create an observer.</li></ol><h2 id="code" tabindex="-1"><a class="header-anchor" href="#code" aria-hidden="true">#</a> Code</h2>`,9),y=n("div",{class:"language-javascript ext-js line-numbers-mode"},[n("pre",{class:"language-javascript"},[n("code",null,[n("span",{class:"token comment"},"// You can use Observer which is bundled to your code"),s(`
+
+`),n("span",{class:"token comment"},"// class Observer {"),s(`
+`),n("span",{class:"token comment"},"//   // subscriber could one next function or a handler object {next, error, complete}"),s(`
+`),n("span",{class:"token comment"},"//   constructor(subscriber) { }"),s(`
+`),n("span",{class:"token comment"},"//   next(value) { }"),s(`
+`),n("span",{class:"token comment"},"//   error(error) { }"),s(`
+`),n("span",{class:"token comment"},"//   complete() {}"),s(`
+`),n("span",{class:"token comment"},"// }"),s(`
+
+
+`),n("span",{class:"token keyword"},"class"),s(),n("span",{class:"token class-name"},"Subject"),s(),n("span",{class:"token punctuation"},"{"),s(`
+  `),n("span",{class:"token function"},"constructor"),n("span",{class:"token punctuation"},"("),n("span",{class:"token punctuation"},")"),s(),n("span",{class:"token punctuation"},"{"),s(`
+   
+  `),n("span",{class:"token punctuation"},"}"),s(`
+  `),n("span",{class:"token function"},"subscribe"),n("span",{class:"token punctuation"},"("),n("span",{class:"token parameter"},"subscriber"),n("span",{class:"token punctuation"},")"),s(),n("span",{class:"token punctuation"},"{"),s(`
+    
+  `),n("span",{class:"token punctuation"},"}"),s(`
+`),n("span",{class:"token punctuation"},"}"),s(`
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),S=c('<h2 id="related" tabindex="-1"><a class="header-anchor" href="#related" aria-hidden="true">#</a> Related</h2><ul><li><a href="./create-an-Observable">create an Observable</a></li><li><a href="./implement-Observable-from">implement Observable.from()</a></li></ul><h2 id="source" tabindex="-1"><a class="header-anchor" href="#source" aria-hidden="true">#</a> Source</h2>',3),C={href:"https://bigfrontend.dev/problem/implement-Observable-Subject",target:"_blank",rel:"noopener noreferrer"},N=s("Source From");function E(F,G){const a=t("ExternalLinkIcon"),l=t("CodeGroupItem"),i=t("CodeGroup");return d(),p(u,null,[m,v,n("p",null,[k,n("a",h,[_,e(a)]),f]),n("p",null,[g,n("a",j,[w,e(a)]),x]),O,e(i,null,{default:o(()=>[e(l,{title:"javascript",active:""},{default:o(()=>[y]),_:1})]),_:1}),S,n("p",null,[n("a",C,[N,e(a)])])],64)}var V=r(b,[["render",E],["__file","implement-observable-subject.html.vue"]]);export{V as default};

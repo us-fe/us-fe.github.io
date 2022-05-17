@@ -1,0 +1,27 @@
+import{_ as c}from"./plugin-vue_export-helper.21dcd24c.js";import{r as t,c as r,a as n,b as e,w as i,F as p,d as s,e as d,o as u}from"./app.22a70bca.js";const m={},v=n("h1",{id:"bigdecimal-multiplication",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#bigdecimal-multiplication","aria-hidden":"true"},"#"),s(" BigDecimal multiplication")],-1),h=n("h2",{id:"question",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#question","aria-hidden":"true"},"#"),s(" Question")],-1),b=s("This is a follow-up on "),k={href:"https://bigfrontend.dev/problem/decimal-addition",target:"_blank",rel:"noopener noreferrer"},_=s("126. BigDecimal addition"),g=d(`<p>In this problem, you are asked to <strong>implement the multiplication of two decimals with arbitrary digits</strong>.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code>
+<span class="token function">multiply</span><span class="token punctuation">(</span>
+  <span class="token string">&#39;1123456787654323456789&#39;</span><span class="token punctuation">,</span> 
+  <span class="token string">&#39;1234567887654323456&#39;</span>
+<span class="token punctuation">)</span>
+<span class="token comment">// &#39;1386983673205309924427166592431045142784&#39;</span>
+
+<span class="token function">multiply</span><span class="token punctuation">(</span>
+  <span class="token string">&#39;-1123456787654323456789&#39;</span><span class="token punctuation">,</span> 
+  <span class="token string">&#39;1234567887654323456.12348&#39;</span>
+<span class="token punctuation">)</span>
+<span class="token comment">// &#39;-1386983673205309924565891036570601003228.30572&#39;</span>
+
+<span class="token function">multiply</span><span class="token punctuation">(</span>
+  <span class="token string">&#39;-0.12345&#39;</span><span class="token punctuation">,</span> 
+  <span class="token string">&#39;-1.6789012&#39;</span>
+<span class="token punctuation">)</span>
+<span class="token comment">// &#39;0.20726035314&#39;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),f=s("This problem covers "),x={href:"https://bigfrontend.dev/problem/implement-BigInt-multiplication",target:"_blank",rel:"noopener noreferrer"},y=s("114. implement BigInt multiplication"),w=s("."),j=n("li",null,"trailing zeroes in the result should be removed.",-1),B=n("li",null,[s("Big.js defaults return exponential notation when it is too big, in this problem, "),n("strong",null,"don't do that")],-1),C=n("h2",{id:"code",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#code","aria-hidden":"true"},"#"),s(" Code")],-1),I=n("div",{class:"language-javascript ext-js line-numbers-mode"},[n("pre",{class:"language-javascript"},[n("code",null,[n("span",{class:"token doc-comment comment"},[s(`/**
+ * `),n("span",{class:"token keyword"},"@param"),s(),n("span",{class:"token class-name"},[n("span",{class:"token punctuation"},"{"),s("string"),n("span",{class:"token punctuation"},"}")]),s(),n("span",{class:"token parameter"},"a"),s(` 
+ * `),n("span",{class:"token keyword"},"@param"),s(),n("span",{class:"token class-name"},[n("span",{class:"token punctuation"},"{"),s("string"),n("span",{class:"token punctuation"},"}")]),s(),n("span",{class:"token parameter"},"b"),s(`
+ * `),n("span",{class:"token keyword"},"@return"),s(),n("span",{class:"token class-name"},[n("span",{class:"token punctuation"},"{"),s("string"),n("span",{class:"token punctuation"},"}")]),s(`
+ */`)]),s(`
+`),n("span",{class:"token keyword"},"function"),s(),n("span",{class:"token function"},"multiply"),n("span",{class:"token punctuation"},"("),n("span",{class:"token parameter"},[s("a"),n("span",{class:"token punctuation"},","),s(" b")]),n("span",{class:"token punctuation"},")"),s(),n("span",{class:"token punctuation"},"{"),s(`
+  `),n("span",{class:"token comment"},"// your code here"),s(`
+`),n("span",{class:"token punctuation"},"}"),s(`
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),G=n("h2",{id:"source",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#source","aria-hidden":"true"},"#"),s(" Source")],-1),N={href:"https://bigfrontend.dev/problem/bigdecimal-multiplication",target:"_blank",rel:"noopener noreferrer"},V=s("Source From");function q(E,F){const a=t("ExternalLinkIcon"),o=t("CodeGroupItem"),l=t("CodeGroup");return u(),r(p,null,[v,h,n("blockquote",null,[n("p",null,[b,n("a",k,[_,e(a)])])]),g,n("ol",null,[n("li",null,[f,n("a",x,[y,e(a)]),w]),j,B]),C,e(l,null,{default:i(()=>[e(o,{title:"javascript",active:""},{default:i(()=>[I]),_:1})]),_:1}),G,n("p",null,[n("a",N,[V,e(a)])])],64)}var D=c(m,[["render",q],["__file","bigdecimal-multiplication.html.vue"]]);export{D as default};

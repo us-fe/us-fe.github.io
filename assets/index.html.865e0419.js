@@ -1,0 +1,1 @@
+const e={key:"v-34c37238",path:"/tag/regexp/",title:"RegExp \u6807\u7B7E",lang:"zh-CN",frontmatter:{title:"RegExp \u6807\u7B7E",blog:{type:"category",name:"RegExp",key:"tag"},layout:"Blog"},excerpt:"",headers:[],git:{},readingTime:{minutes:0,words:0},copyright:"\u8457\u4F5C\u6743\u5F52\u6240\u6709",filePathRelative:null};export{e as data};

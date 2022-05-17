@@ -1,0 +1,13 @@
+import{_ as a}from"./plugin-vue_export-helper.21dcd24c.js";import{r as e,c as o,a as n,b as t,F as i,e as c,d as p,o as r}from"./app.22a70bca.js";const l={},d=c(`<h1 id="hoisting-i" tabindex="-1"><a class="header-anchor" href="#hoisting-i" aria-hidden="true">#</a> Hoisting I</h1><h2 id="question" tabindex="-1"><a class="header-anchor" href="#question" aria-hidden="true">#</a> Question</h2><p>What does the code snippet to the right output by <code>console.log</code>?</p><h2 id="snippet" tabindex="-1"><a class="header-anchor" href="#snippet" aria-hidden="true">#</a> Snippet</h2><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> b
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+b <span class="token operator">=</span> <span class="token number">2</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span>
+<span class="token keyword">var</span> c <span class="token operator">=</span> <span class="token number">3</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span>
+<span class="token keyword">let</span> d <span class="token operator">=</span> <span class="token number">2</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="source" tabindex="-1"><a class="header-anchor" href="#source" aria-hidden="true">#</a> Source</h2>`,6),u={href:"https://bigfrontend.dev/quiz/Hoisting-I",target:"_blank",rel:"noopener noreferrer"},h=p("Source From");function k(v,m){const s=e("ExternalLinkIcon");return r(),o(i,null,[d,n("p",null,[n("a",u,[h,t(s)])])],64)}var f=a(l,[["render",k],["__file","hoisting-i.html.vue"]]);export{f as default};

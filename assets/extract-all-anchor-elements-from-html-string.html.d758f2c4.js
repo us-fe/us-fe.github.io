@@ -1,0 +1,23 @@
+import{_ as i}from"./plugin-vue_export-helper.21dcd24c.js";import{r as e,c as r,b as a,w as s,a as n,F as d,e as u,d as t,o as p}from"./app.22a70bca.js";const m={},v=u(`<h1 id="extract-all-anchor-element-from-html-string" tabindex="-1"><a class="header-anchor" href="#extract-all-anchor-element-from-html-string" aria-hidden="true">#</a> extract all anchor element from HTML string</h1><h2 id="question" tabindex="-1"><a class="header-anchor" href="#question" aria-hidden="true">#</a> Question</h2><p>Given a HTML string, write a function to extract the anchor <code>&lt;a/&gt;</code> tag from it.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token function">extract</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">
+&lt;div&gt;
+    &lt;a&gt;link1&lt; / a&gt;&lt;a href=&quot;https://bfe.dev&quot;&gt;link1&lt; / a&gt;
+    &lt;div&lt;abbr&gt;bfe&lt;/abbr&gt;div&gt;
+    &lt;div&gt;
+&lt;abbr&gt;bfe&lt;/abbr&gt;&lt;a href=&quot;https://bfe.dev&quot; class=&quot;link2&quot;&gt; &lt;abbr&gt;bfe&lt;/abbr&gt;   &lt;span class=&quot;l&quot;&gt;l&lt;/span&gt;&lt;span  class=&quot;i&quot;&gt;i&lt;/span&gt;   nk2   &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">)</span>
+
+<span class="token comment">// [</span>
+<span class="token comment">//    &#39;&lt;a&gt;link1&lt; / a&gt;&#39;,</span>
+<span class="token comment">//    &#39;&lt;a href=&quot;https://bfe.dev&quot;&gt;link1&lt; / a&gt;&#39;,</span>
+<span class="token comment">//    &#39;&lt;a href=&quot;https://bfe.dev&quot; class=&quot;link2&quot;&gt; &lt;abbr&gt;bfe&lt;/abbr&gt;   &lt;span class=&quot;l&quot;&gt;l&lt;/span&gt;&lt;span  //class=&quot;i&quot;&gt;i&lt;/span&gt;   nk2   &lt;/a&gt;&#39;</span>
+ <span class="token comment">//]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="code" tabindex="-1"><a class="header-anchor" href="#code" aria-hidden="true">#</a> Code</h2>`,5),g=n("div",{class:"language-javascript ext-js line-numbers-mode"},[n("pre",{class:"language-javascript"},[n("code",null,[n("span",{class:"token doc-comment comment"},[t(`/**
+ * `),n("span",{class:"token keyword"},"@param"),t(),n("span",{class:"token class-name"},[n("span",{class:"token punctuation"},"{"),t("string"),n("span",{class:"token punctuation"},"}")]),t(),n("span",{class:"token parameter"},"str"),t(`
+ * `),n("span",{class:"token keyword"},"@return"),t(),n("span",{class:"token class-name"},[n("span",{class:"token punctuation"},"{"),t("string"),n("span",{class:"token punctuation"},"["),n("span",{class:"token punctuation"},"]"),n("span",{class:"token punctuation"},"}")]),t(`
+ */`)]),t(`
+`),n("span",{class:"token keyword"},"function"),t(),n("span",{class:"token function"},"extract"),n("span",{class:"token punctuation"},"("),n("span",{class:"token parameter"},"str"),n("span",{class:"token punctuation"},")"),t(),n("span",{class:"token punctuation"},"{"),t(`
+  `),n("span",{class:"token comment"},"// your code here"),t(`
+`),n("span",{class:"token punctuation"},"}"),t(`
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),b=n("h2",{id:"source",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#source","aria-hidden":"true"},"#"),t(" Source")],-1),h={href:"https://bigfrontend.dev/problem/extract-all-anchor-elements-from-HTML-string",target:"_blank",rel:"noopener noreferrer"},k=t("Source From");function f(_,q){const l=e("CodeGroupItem"),o=e("CodeGroup"),c=e("ExternalLinkIcon");return p(),r(d,null,[v,a(o,null,{default:s(()=>[a(l,{title:"javascript",active:""},{default:s(()=>[g]),_:1})]),_:1}),b,n("p",null,[n("a",h,[k,a(c)])])],64)}var C=i(m,[["render",f],["__file","extract-all-anchor-elements-from-html-string.html.vue"]]);export{C as default};

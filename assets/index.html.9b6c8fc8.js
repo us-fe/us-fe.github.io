@@ -1,0 +1,1 @@
+const e={key:"v-2897d318",path:"/slides/",title:"\u5E7B\u706F\u7247",lang:"zh-CN",frontmatter:{title:"\u5E7B\u706F\u7247",blog:{type:"type",key:"slide"},layout:"Blog"},excerpt:"",headers:[],git:{},readingTime:{minutes:0,words:0},copyright:"\u8457\u4F5C\u6743\u5F52\u6240\u6709",filePathRelative:null};export{e as data};
